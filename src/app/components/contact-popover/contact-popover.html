@@ -1,0 +1,12 @@
+<ion-list>
+    <ion-list-header>Select Contacts</ion-list-header>
+
+    <ion-item *ngFor="let contact of contacts; let i = index;">
+    <ion-avatar item-start>
+      <img [src]="contact.picture">
+    </ion-avatar>
+    <ion-label>{{contact.firstname + ' ' + contact.lastname}}</ion-label>
+    <ion-checkbox item-end color="alternative" [(ngModel)]="contact.check"></ion-checkbox>
+  </ion-item>
+  </ion-list>
+  <button ion-button full (click)="close()" >Close</button>

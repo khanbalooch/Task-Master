@@ -1,0 +1,70 @@
+login {
+  .signin-content {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    width: 100%;
+    height: 100%;
+     &>.icon {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex:.5;
+      img {
+        display: flex;
+        width: 120px;
+        height: 120px;
+        justify-content: center;
+        align-items: center;
+      }
+    }
+    &>.footer {
+      display: flex;
+      flex-direction: column;
+      flex: 1;
+      justify-content: flex-start;
+      text-align: center;
+      margin-bottom: 10px;
+      padding:0 20px;
+      ion-item{
+        border:0.55px solid #c8c7cc;
+        border-radius: 6px;
+        .item-inner{
+          border-bottom: none;
+        }
+        &:first-of-type{
+          border-bottom-left-radius: 0;
+          border-bottom-right-radius: 0;
+        }
+        &:last-of-type{
+          border-top:none;
+          margin-bottom: 10px;
+          border-top-left-radius: 0;
+          border-top-right-radius: 0;
+        }
+      }
+      .list-ios {
+        margin: -1px 0 2px;
+      }
+      .item-ios {
+        padding-left: 0px !important;
+      }
+      .text-input-ios {
+        padding: 5px;
+        text-align: center;
+      }
+      .button-ios {
+        margin: 0;
+        height: 3.8em;
+      }
+      p {
+        color: color($colors, dark);
+        font-size: 1.2rem;
+        a {
+          color: color($colors, alternative);
+          font-size: 1.5rem;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,57 @@
+<ion-header>
+
+  <ion-toolbar>
+    <ion-buttons start>
+      <button ion-button icon-only (click)="openSetting()">
+            <simple-line-icon name="settings"></simple-line-icon>
+          </button>
+    </ion-buttons>
+    <ion-title>
+      <span (click)="presentMonthModal($event)">{{month.format("MMMM, YYYY")}}</span>
+      <simple-line-icon name="arrow-down" class="title-caret"></simple-line-icon>
+    </ion-title>
+    <ion-buttons end>
+      <button ion-button icon-only color="primary" (click)="previous()">
+          <simple-line-icon name="arrow-left"></simple-line-icon>
+        </button>
+      <button ion-button icon-only color="primary" (click)="next()">
+            <simple-line-icon name="arrow-right"></simple-line-icon>
+          </button>
+    </ion-buttons>
+  </ion-toolbar>
+
+</ion-header>
+
+
+<ion-content>
+  <div class="calendar">
+    <div class="graph">
+      <ion-row class="weekdays">
+        <ion-col *ngFor="let item of weekDayNames">{{item | slice: 0: 3}}</ion-col>
+      </ion-row>
+      <ion-row class="weeks" *ngFor="let week of weeks">
+        <ion-col class="day" (click)="select(day)" *ngFor="let day of week.days">
+          <div class="number" [ngClass]="{'today': day.isToday, 'different-month': !day.isCurrentMonth, 'selected': day.date.isSame(selected) }">{{day.number}}</div>
+          <div class="events" [ngClass]="{'different-month': !day.isCurrentMonth}">
+            <div *ngFor="let events of day.events| slice: 0: 5" [ngStyle]="{'backgroundColor': events.color}"></div>
+          </div>
+        </ion-col>
+      </ion-row>
+    </div>
+
+    <div class="list" *ngIf="selected" @slideDownAnimation>
+      <div class="header">{{selected | amDateFormat:'LL'}}
+        <simple-line-icon name="calendar" class="pull-right"></simple-line-icon>
+      </div>
+
+      <div class="content">
+        <div class="scroll">
+          <event-list [events]="dayEvents" (openEvent)="open($event)"></event-list>
+        </div>
+      </div>
+    </div>
+  </div>
+  <ion-fab right bottom>
+      <button mini ion-fab (click)="add()"><ion-icon name="add"></ion-icon></button>
+  </ion-fab>
+</ion-content>

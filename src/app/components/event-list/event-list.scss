@@ -1,0 +1,74 @@
+event-list {
+  $checkbox-ios-icon-size: 30px;
+  .no-events {
+    font-size: 1.6rem;
+    background: color($colors, light);
+    padding: 20px;
+    border-radius: 6px;
+    h2 {
+      font-size: 2rem;
+      color: color($colors, primary);
+    }
+  }
+  .group {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    &>.title {
+      display: flex;
+      flex: 1;
+      color: color($colors, stable);
+      background: color($colors, light);
+      padding:10px;
+    }
+  }
+  .event-item {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 10px 15px;
+    // margin-bottom: 15px;
+    border-bottom: 1px solid color($colors, light);
+    &>.color {
+      display: flex;
+      flex-direction: column;
+      height: 15px;
+      width: 15px;
+      border-radius: 100%;
+    }
+    &>.desc {
+      display: flex;
+      flex-direction: column;
+      flex: 1;
+      padding: 0 20px;
+      &>.title {
+        margin-bottom: 5px;
+        font-weight: 500;
+        color: color($colors, dark-alt);
+      }
+      &>.more {
+        display: flex;
+        flex: 1;
+        &>.date {
+          display: flex;
+          color: color($colors, stable);
+          font-size: 1.3rem;
+          margin-right: 20px;
+        }
+        &>.icon {
+          display: flex;
+          align-items: flex-end;
+          padding: 0 3px;
+          color: color($colors, stable);
+        }
+      }
+    }
+    &>.more {
+      display: flex;
+      width: 20%;
+      justify-content: flex-end;
+      align-items: flex-end;
+    }
+  }
+}

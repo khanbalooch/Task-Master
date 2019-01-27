@@ -1,0 +1,33 @@
+dashboard-cards {
+    display: flex;
+    flex: 1;
+    &>.item {
+      display: flex;
+      flex: 1;
+      flex-direction: column;
+      height: auto !important;
+      align-items: center;
+      padding:0;
+      .button-inner {
+        padding:10px 0px;
+        flex-direction: column!important;
+        justify-content: center;
+        align-items: center;
+        flex: 1;
+        simple-line-icon {
+          display: flex;
+          flex: 1;
+          font-size: 3rem;
+          justify-content: center;
+        }
+        &>.text {
+          display: flex;
+          flex: 1;
+          margin: 10px 0;
+          font-size: 1.2rem;
+          font-weight: 300;
+          justify-content: center;
+        }
+      }
+    }
+}

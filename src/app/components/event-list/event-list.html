@@ -1,0 +1,42 @@
+<div class="no-events" *ngIf="events && events.length === 0">
+  <h2>No Events</h2>
+  You have no events today. Do you want to create one?
+</div>
+<div *ngIf="!grouped">
+  <div class="event-item" *ngFor="let event of events ; let i = index;">
+    <div class="color" [style.background]="event.color"></div>
+    <div class="desc" (click)="open(event)">
+      <div class="title">{{event.title}}</div>
+      <div class="more">
+        <div class="date">Starts at {{event.start | date: 'shortTime'}}</div>
+        <simple-line-icon name="pin" *ngIf="event.location"></simple-line-icon>
+        <simple-line-icon name="users" *ngIf="event.invites"></simple-line-icon>
+        <simple-line-icon name="note" *ngIf="event.notes"></simple-line-icon>
+      </div>
+    </div>
+    <div class="more">
+      <ion-checkbox color="secondary" (ionChange)="updateEvent($event, event)" [(ngModel)]="event.completed"></ion-checkbox>
+    </div>
+  </div>
+</div>
+<div *ngIf="grouped">
+  <div class="group" *ngFor="let group of groupedEvents">
+    <div class="title">{{group.date | amDateFormat:'LL'}}</div>
+
+    <div class="event-item" *ngFor="let event of group.events ; let i = index;">
+      <div class="color" [style.background]="event.color"></div>
+      <div class="desc" (click)="open(event)">
+        <div class="title">{{event.title}}</div>
+        <div class="more">
+          <div class="date">Starts at {{event.start | date: 'shortTime'}}</div>
+          <simple-line-icon name="pin" *ngIf="event.location"></simple-line-icon>
+          <simple-line-icon name="users" *ngIf="event.invites"></simple-line-icon>
+          <simple-line-icon name="note" *ngIf="event.notes"></simple-line-icon>
+        </div>
+      </div>
+      <div class="more">
+        <ion-checkbox color="secondary" (ionChange)="updateEvent($event, event)" [(ngModel)]="event.completed"></ion-checkbox>
+      </div>
+    </div>
+  </div>
+</div>

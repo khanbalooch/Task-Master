@@ -1,0 +1,49 @@
+
+<ion-header>
+
+  <ion-toolbar>
+      <ion-buttons start>
+          <button ion-button icon-only (click)="openSetting()">
+            <simple-line-icon name="settings"></simple-line-icon>
+          </button>
+        </ion-buttons>
+    <ion-title>profile</ion-title>
+    <ion-buttons end>
+        <button ion-button icon-only (click)="openIntro()">
+          <simple-line-icon name="logout"></simple-line-icon>
+        </button>
+      </ion-buttons>
+  </ion-toolbar>
+
+</ion-header>
+
+
+<ion-content parallax-header>
+  <div class="profile">
+  <div class="header">
+    <div class="image"  [style.background-image]="'url(' + user.picture + ')'"></div>
+    <div class="desc">
+      {{user.firstname + ' ' + user.lastname}}
+    </div>
+  </div>
+  <div class="profile-content">
+    <div class="tabs">
+      <div class="tab-item" [ngClass]="{'active': tab.active}" *ngFor="let tab of tabs" (click)="setSelectedTab(tab)">{{tab.text}}</div>
+    </div>
+    <div class="body">
+      <span [ngSwitch]="tab.text">
+          <event-list  *ngSwitchCase="'Events'" [events]="events" (openEvent)="openEvent($event)"></event-list>
+        <note-list *ngSwitchCase="'Notes'" [notes]="notes" (openNote)="openNote($event)"></note-list>
+      </span>
+    </div>
+  </div>
+</div>
+
+<ion-fab right bottom>
+    <button ion-fab mini><ion-icon name="add"></ion-icon></button>
+    <ion-fab-list side="top">
+      <button ion-fab color="tertiary" (click)="addNote()"><ion-icon name="create"></ion-icon></button>
+      <button ion-fab color="secondary" (click)="addEvent()"><ion-icon name="calendar"></ion-icon></button>
+    </ion-fab-list>
+  </ion-fab>
+</ion-content>

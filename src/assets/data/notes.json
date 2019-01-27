@@ -1,0 +1,765 @@
+[{
+  "type": "note",
+  "note": "Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Duis faucibus accumsan odio. Curabitur convallis. Duis consequat dui nec nisi volutpat eleifend. Donec ut dolor. Morbi vel lectus in quam fringilla rhoncus. Mauris enim leo, rhoncus sed, vestibulum sit amet, cursus id, turpis. Integer aliquet, massa id lobortis convallis, tortor risus dapibus augue, vel accumsan tellus nisi eu orci. Mauris lacinia sapien quis libero. Nullam sit amet turpis elementum ligula vehicula consequat. Morbi a ipsum.",
+  "list": [
+    {
+      "checked": true,
+      "text": "Morbi sem mauris, laoreet ut, rhoncus aliquet, pulvinar sed, nisl. Nunc rhoncus dui vel sem."
+    },
+    {
+      "checked": true,
+      "text": "Vestibulum rutrum rutrum neque. Aenean auctor gravida sem."
+    },
+    {
+      "checked": true,
+      "text": "Duis bibendum."
+    },
+    {
+      "checked": true,
+      "text": "Nullam orci pede, venenatis non, sodales sed, tincidunt eu, felis. Fusce posuere felis sed lacus."
+    },
+    {
+      "checked": false,
+      "text": "Duis consequat dui nec nisi volutpat eleifend. Donec ut dolor."
+    },
+    {
+      "checked": true,
+      "text": "Aliquam sit amet diam in magna bibendum imperdiet."
+    },
+    {
+      "checked": true,
+      "text": "Cras in purus eu magna vulputate luctus. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus."
+    },
+    {
+      "checked": true,
+      "text": "Duis bibendum."
+    },
+    {
+      "checked": false,
+      "text": "Vestibulum quam sapien, varius ut, blandit non, interdum in, ante."
+    },
+    {
+      "checked": true,
+      "text": "Morbi non quam nec dui luctus rutrum."
+    },
+    {
+      "checked": true,
+      "text": "Phasellus sit amet erat."
+    },
+    {
+      "checked": true,
+      "text": "Vivamus vestibulum sagittis sapien."
+    },
+    {
+      "checked": true,
+      "text": "In hac habitasse platea dictumst."
+    },
+    {
+      "checked": false,
+      "text": "In quis justo. Maecenas rhoncus aliquam lacus."
+    },
+    {
+      "checked": true,
+      "text": "Nulla tellus."
+    }
+  ],
+  "color": "#280861",
+  "title": "Expanded responsive flexibility"
+}, {
+  "type": "note",
+  "note": "Maecenas rhoncus aliquam lacus. Morbi quis tortor id nulla ultrices aliquet. Maecenas leo odio, condimentum id, luctus nec, molestie sed, justo. Pellentesque viverra pede ac diam. Cras pellentesque volutpat dui. Maecenas tristique, est et tempus semper, est quam pharetra magna, ac consequat metus sapien ut nunc. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Mauris viverra diam vitae quam. Suspendisse potenti. Nullam porttitor lacus at turpis.",
+  "list": [
+    {
+      "checked": true,
+      "text": "Praesent id massa id nisl venenatis lacinia. Aenean sit amet justo."
+    },
+    {
+      "checked": false,
+      "text": "Ut tellus."
+    },
+    {
+      "checked": true,
+      "text": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Proin risus."
+    },
+    {
+      "checked": true,
+      "text": "Duis mattis egestas metus. Aenean fermentum."
+    },
+    {
+      "checked": true,
+      "text": "Phasellus in felis."
+    },
+    {
+      "checked": false,
+      "text": "Pellentesque at nulla. Suspendisse potenti."
+    },
+    {
+      "checked": false,
+      "text": "Nam congue, risus semper porta volutpat, quam pede lobortis ligula, sit amet eleifend pede libero quis orci."
+    },
+    {
+      "checked": false,
+      "text": "Suspendisse accumsan tortor quis turpis. Sed ante."
+    },
+    {
+      "checked": false,
+      "text": "Fusce posuere felis sed lacus."
+    },
+    {
+      "checked": false,
+      "text": "Nulla tellus. In sagittis dui vel nisl."
+    },
+    {
+      "checked": true,
+      "text": "Integer non velit. Donec diam neque, vestibulum eget, vulputate ut, ultrices vel, augue."
+    },
+    {
+      "checked": true,
+      "text": "Donec ut dolor."
+    },
+    {
+      "checked": true,
+      "text": "Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Etiam vel augue."
+    },
+    {
+      "checked": true,
+      "text": "Donec dapibus."
+    },
+    {
+      "checked": false,
+      "text": "Phasellus sit amet erat. Nulla tempus."
+    }
+  ],
+  "color": "#2cee02",
+  "title": "Automated methodical leverage"
+}, {
+  "type": "note",
+  "note": "Maecenas pulvinar lobortis est. Phasellus sit amet erat. Nulla tempus. Vivamus in felis eu sapien cursus vestibulum.",
+  "list": [
+    {
+      "checked": false,
+      "text": "Praesent id massa id nisl venenatis lacinia. Aenean sit amet justo."
+    },
+    {
+      "checked": false,
+      "text": "Curabitur gravida nisi at nibh. In hac habitasse platea dictumst."
+    },
+    {
+      "checked": true,
+      "text": "Nam congue, risus semper porta volutpat, quam pede lobortis ligula, sit amet eleifend pede libero quis orci. Nullam molestie nibh in lectus."
+    },
+    {
+      "checked": true,
+      "text": "Curabitur convallis. Duis consequat dui nec nisi volutpat eleifend."
+    },
+    {
+      "checked": true,
+      "text": "Nam ultrices, libero non mattis pulvinar, nulla pede ullamcorper augue, a suscipit nulla elit ac nulla. Sed vel enim sit amet nunc viverra dapibus."
+    },
+    {
+      "checked": false,
+      "text": "Praesent blandit lacinia erat. Vestibulum sed magna at nunc commodo placerat."
+    }
+  ],
+  "color": "#ff0ccf",
+  "title": "Multi-channelled attitude-oriented knowledge base"
+}, {
+  "type": "list",
+  "note": "Sed ante. Vivamus tortor. Duis mattis egestas metus. Aenean fermentum. Donec ut mauris eget massa tempor convallis. Nulla neque libero, convallis eget, eleifend luctus, ultricies eu, nibh.",
+  "list": [
+    {
+      "checked": false,
+      "text": "Maecenas tincidunt lacus at velit."
+    },
+    {
+      "checked": false,
+      "text": "In congue."
+    },
+    {
+      "checked": false,
+      "text": "Praesent blandit lacinia erat. Vestibulum sed magna at nunc commodo placerat."
+    },
+    {
+      "checked": true,
+      "text": "Integer ac leo. Pellentesque ultrices mattis odio."
+    },
+    {
+      "checked": true,
+      "text": "Aliquam quis turpis eget elit sodales scelerisque. Mauris sit amet eros."
+    },
+    {
+      "checked": false,
+      "text": "Aliquam quis turpis eget elit sodales scelerisque."
+    },
+    {
+      "checked": true,
+      "text": "Morbi quis tortor id nulla ultrices aliquet. Maecenas leo odio, condimentum id, luctus nec, molestie sed, justo."
+    },
+    {
+      "checked": true,
+      "text": "Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus."
+    },
+    {
+      "checked": true,
+      "text": "Cras in purus eu magna vulputate luctus."
+    },
+    {
+      "checked": false,
+      "text": "Morbi sem mauris, laoreet ut, rhoncus aliquet, pulvinar sed, nisl."
+    },
+    {
+      "checked": false,
+      "text": "In est risus, auctor sed, tristique in, tempus sit amet, sem. Fusce consequat."
+    },
+    {
+      "checked": false,
+      "text": "Nulla suscipit ligula in lacus."
+    },
+    {
+      "checked": true,
+      "text": "Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus."
+    }
+  ],
+  "color": "#68bd37",
+  "title": "Stand-alone tangible benchmark"
+}, {
+  "type": "list",
+  "note": "Nam ultrices, libero non mattis pulvinar, nulla pede ullamcorper augue, a suscipit nulla elit ac nulla. Sed vel enim sit amet nunc viverra dapibus. Nulla suscipit ligula in lacus. Curabitur at ipsum ac tellus semper interdum. Mauris ullamcorper purus sit amet nulla. Quisque arcu libero, rutrum ac, lobortis vel, dapibus at, diam. Nam tristique tortor eu pede.",
+  "list": [
+    {
+      "checked": false,
+      "text": "Morbi sem mauris, laoreet ut, rhoncus aliquet, pulvinar sed, nisl."
+    },
+    {
+      "checked": false,
+      "text": "Morbi a ipsum. Integer a nibh."
+    },
+    {
+      "checked": false,
+      "text": "Vivamus metus arcu, adipiscing molestie, hendrerit at, vulputate vitae, nisl."
+    },
+    {
+      "checked": true,
+      "text": "In hac habitasse platea dictumst."
+    },
+    {
+      "checked": false,
+      "text": "Proin eu mi. Nulla ac enim."
+    },
+    {
+      "checked": false,
+      "text": "Etiam justo."
+    }
+  ],
+  "color": "#b05f1f",
+  "title": "Fully-configurable value-added archive"
+}, {
+  "type": "list",
+  "note": "In hac habitasse platea dictumst. Maecenas ut massa quis augue luctus tincidunt. Nulla mollis molestie lorem. Quisque ut erat.",
+  "list": [
+    {
+      "checked": false,
+      "text": "Donec diam neque, vestibulum eget, vulputate ut, ultrices vel, augue. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec pharetra, magna vestibulum aliquet ultrices, erat tortor sollicitudin mi, sit amet lobortis sapien sapien non mi."
+    },
+    {
+      "checked": false,
+      "text": "Nullam molestie nibh in lectus."
+    },
+    {
+      "checked": true,
+      "text": "In est risus, auctor sed, tristique in, tempus sit amet, sem. Fusce consequat."
+    },
+    {
+      "checked": false,
+      "text": "Duis aliquam convallis nunc. Proin at turpis a pede posuere nonummy."
+    },
+    {
+      "checked": true,
+      "text": "Curabitur convallis. Duis consequat dui nec nisi volutpat eleifend."
+    },
+    {
+      "checked": false,
+      "text": "Nam nulla. Integer pede justo, lacinia eget, tincidunt eget, tempus vel, pede."
+    },
+    {
+      "checked": true,
+      "text": "Morbi ut odio."
+    },
+    {
+      "checked": false,
+      "text": "Integer pede justo, lacinia eget, tincidunt eget, tempus vel, pede."
+    },
+    {
+      "checked": true,
+      "text": "Nulla facilisi."
+    },
+    {
+      "checked": true,
+      "text": "Aenean sit amet justo."
+    },
+    {
+      "checked": false,
+      "text": "Suspendisse potenti."
+    },
+    {
+      "checked": false,
+      "text": "Integer a nibh."
+    }
+  ],
+  "color": "#6f2bb9",
+  "title": "Integrated hybrid initiative"
+}, {
+  "type": "list",
+  "note": "Sed ante. Vivamus tortor.",
+  "list": [
+    {
+      "checked": true,
+      "text": "Aliquam erat volutpat."
+    },
+    {
+      "checked": true,
+      "text": "Cras in purus eu magna vulputate luctus."
+    },
+    {
+      "checked": false,
+      "text": "Quisque arcu libero, rutrum ac, lobortis vel, dapibus at, diam. Nam tristique tortor eu pede."
+    },
+    {
+      "checked": false,
+      "text": "Vivamus in felis eu sapien cursus vestibulum. Proin eu mi."
+    },
+    {
+      "checked": false,
+      "text": "Duis aliquam convallis nunc."
+    }
+  ],
+  "color": "#03d10a",
+  "title": "User-centric encompassing attitude"
+}, {
+  "type": "list",
+  "note": "Praesent lectus. Vestibulum quam sapien, varius ut, blandit non, interdum in, ante. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Duis faucibus accumsan odio. Curabitur convallis. Duis consequat dui nec nisi volutpat eleifend.",
+  "list": [
+    {
+      "checked": false,
+      "text": "In eleifend quam a odio."
+    },
+    {
+      "checked": true,
+      "text": "Maecenas pulvinar lobortis est."
+    },
+    {
+      "checked": false,
+      "text": "Quisque id justo sit amet sapien dignissim vestibulum. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nulla dapibus dolor vel est."
+    },
+    {
+      "checked": false,
+      "text": "Maecenas tincidunt lacus at velit."
+    },
+    {
+      "checked": true,
+      "text": "Donec posuere metus vitae ipsum."
+    },
+    {
+      "checked": true,
+      "text": "Phasellus sit amet erat."
+    },
+    {
+      "checked": true,
+      "text": "In hac habitasse platea dictumst."
+    },
+    {
+      "checked": false,
+      "text": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Proin risus."
+    },
+    {
+      "checked": false,
+      "text": "Nam dui."
+    },
+    {
+      "checked": false,
+      "text": "Etiam pretium iaculis justo. In hac habitasse platea dictumst."
+    },
+    {
+      "checked": true,
+      "text": "Vivamus metus arcu, adipiscing molestie, hendrerit at, vulputate vitae, nisl. Aenean lectus."
+    },
+    {
+      "checked": true,
+      "text": "Cras in purus eu magna vulputate luctus. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus."
+    }
+  ],
+  "color": "#1d02a4",
+  "title": "Multi-channelled client-driven circuit"
+}, {
+  "type": "note",
+  "note": "Praesent lectus. Vestibulum quam sapien, varius ut, blandit non, interdum in, ante. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Duis faucibus accumsan odio. Curabitur convallis.",
+  "list": [
+    {
+      "checked": false,
+      "text": "Suspendisse ornare consequat lectus. In est risus, auctor sed, tristique in, tempus sit amet, sem."
+    },
+    {
+      "checked": false,
+      "text": "Quisque erat eros, viverra eget, congue eget, semper rutrum, nulla."
+    },
+    {
+      "checked": false,
+      "text": "Ut tellus."
+    },
+    {
+      "checked": true,
+      "text": "Suspendisse potenti. Nullam porttitor lacus at turpis."
+    }
+  ],
+  "color": "#bcf47a",
+  "title": "Distributed bandwidth-monitored leverage"
+}, {
+  "type": "list",
+  "note": "Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Etiam vel augue. Vestibulum rutrum rutrum neque. Aenean auctor gravida sem. Praesent id massa id nisl venenatis lacinia.",
+  "list": [
+    {
+      "checked": true,
+      "text": "Integer tincidunt ante vel ipsum."
+    },
+    {
+      "checked": true,
+      "text": "Maecenas rhoncus aliquam lacus."
+    },
+    {
+      "checked": false,
+      "text": "Morbi non lectus."
+    },
+    {
+      "checked": true,
+      "text": "Etiam faucibus cursus urna."
+    },
+    {
+      "checked": false,
+      "text": "Mauris ullamcorper purus sit amet nulla."
+    },
+    {
+      "checked": true,
+      "text": "Aliquam augue quam, sollicitudin vitae, consectetuer eget, rutrum at, lorem."
+    },
+    {
+      "checked": false,
+      "text": "Morbi vestibulum, velit id pretium iaculis, diam erat fermentum justo, nec condimentum neque sapien placerat ante. Nulla justo."
+    },
+    {
+      "checked": true,
+      "text": "Proin leo odio, porttitor id, consequat in, consequat ut, nulla."
+    },
+    {
+      "checked": true,
+      "text": "Donec odio justo, sollicitudin ut, suscipit a, feugiat et, eros. Vestibulum ac est lacinia nisi venenatis tristique."
+    },
+    {
+      "checked": true,
+      "text": "Mauris lacinia sapien quis libero. Nullam sit amet turpis elementum ligula vehicula consequat."
+    },
+    {
+      "checked": false,
+      "text": "Phasellus sit amet erat."
+    },
+    {
+      "checked": false,
+      "text": "Vestibulum ac est lacinia nisi venenatis tristique. Fusce congue, diam id ornare imperdiet, sapien urna pretium nisl, ut volutpat sapien arcu sed augue."
+    },
+    {
+      "checked": false,
+      "text": "Aenean fermentum."
+    },
+    {
+      "checked": true,
+      "text": "Cras pellentesque volutpat dui. Maecenas tristique, est et tempus semper, est quam pharetra magna, ac consequat metus sapien ut nunc."
+    }
+  ],
+  "color": "#ddac97",
+  "title": "User-friendly upward-trending product"
+}, {
+  "type": "list",
+  "note": "Donec diam neque, vestibulum eget, vulputate ut, ultrices vel, augue. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec pharetra, magna vestibulum aliquet ultrices, erat tortor sollicitudin mi, sit amet lobortis sapien sapien non mi. Integer ac neque. Duis bibendum. Morbi non quam nec dui luctus rutrum. Nulla tellus.",
+  "list": [
+    {
+      "checked": true,
+      "text": "Integer tincidunt ante vel ipsum."
+    },
+    {
+      "checked": true,
+      "text": "Nunc rhoncus dui vel sem. Sed sagittis."
+    },
+    {
+      "checked": true,
+      "text": "Pellentesque eget nunc. Donec quis orci eget orci vehicula condimentum."
+    }
+  ],
+  "color": "#9f720b",
+  "title": "Re-contextualized systemic circuit"
+}, {
+  "type": "note",
+  "note": "Praesent blandit. Nam nulla.",
+  "list": [
+    {
+      "checked": false,
+      "text": "Nam tristique tortor eu pede."
+    },
+    {
+      "checked": true,
+      "text": "Integer non velit."
+    },
+    {
+      "checked": true,
+      "text": "Vivamus metus arcu, adipiscing molestie, hendrerit at, vulputate vitae, nisl. Aenean lectus."
+    },
+    {
+      "checked": true,
+      "text": "Sed accumsan felis. Ut at dolor quis odio consequat varius."
+    },
+    {
+      "checked": true,
+      "text": "In hac habitasse platea dictumst."
+    },
+    {
+      "checked": true,
+      "text": "Nunc rhoncus dui vel sem. Sed sagittis."
+    },
+    {
+      "checked": true,
+      "text": "Etiam faucibus cursus urna. Ut tellus."
+    },
+    {
+      "checked": false,
+      "text": "Aenean lectus. Pellentesque eget nunc."
+    },
+    {
+      "checked": true,
+      "text": "Cras in purus eu magna vulputate luctus. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus."
+    },
+    {
+      "checked": true,
+      "text": "Integer a nibh."
+    },
+    {
+      "checked": false,
+      "text": "Vivamus vestibulum sagittis sapien."
+    },
+    {
+      "checked": true,
+      "text": "Cras pellentesque volutpat dui. Maecenas tristique, est et tempus semper, est quam pharetra magna, ac consequat metus sapien ut nunc."
+    }
+  ],
+  "color": "#22130c",
+  "title": "Organized modular flexibility"
+}, {
+  "type": "note",
+  "note": "Praesent blandit lacinia erat. Vestibulum sed magna at nunc commodo placerat. Praesent blandit. Nam nulla. Integer pede justo, lacinia eget, tincidunt eget, tempus vel, pede. Morbi porttitor lorem id ligula. Suspendisse ornare consequat lectus.",
+  "list": [
+    {
+      "checked": false,
+      "text": "Mauris enim leo, rhoncus sed, vestibulum sit amet, cursus id, turpis. Integer aliquet, massa id lobortis convallis, tortor risus dapibus augue, vel accumsan tellus nisi eu orci."
+    }
+  ],
+  "color": "#ee1c04",
+  "title": "Synergistic tangible array"
+}, {
+  "type": "note",
+  "note": "Suspendisse potenti. Cras in purus eu magna vulputate luctus. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vivamus vestibulum sagittis sapien. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Etiam vel augue. Vestibulum rutrum rutrum neque. Aenean auctor gravida sem.",
+  "list": [
+    {
+      "checked": false,
+      "text": "In congue."
+    },
+    {
+      "checked": true,
+      "text": "Curabitur at ipsum ac tellus semper interdum. Mauris ullamcorper purus sit amet nulla."
+    },
+    {
+      "checked": true,
+      "text": "Maecenas ut massa quis augue luctus tincidunt."
+    },
+    {
+      "checked": false,
+      "text": "Suspendisse accumsan tortor quis turpis. Sed ante."
+    },
+    {
+      "checked": false,
+      "text": "Suspendisse potenti."
+    },
+    {
+      "checked": true,
+      "text": "Cras in purus eu magna vulputate luctus. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus."
+    },
+    {
+      "checked": true,
+      "text": "Praesent blandit."
+    }
+  ],
+  "color": "#ebbf65",
+  "title": "Versatile 6th generation project"
+}, {
+  "type": "note",
+  "note": "Vivamus vel nulla eget eros elementum pellentesque. Quisque porta volutpat erat.",
+  "list": [
+    {
+      "checked": true,
+      "text": "Praesent blandit. Nam nulla."
+    },
+    {
+      "checked": false,
+      "text": "In blandit ultrices enim. Lorem ipsum dolor sit amet, consectetuer adipiscing elit."
+    },
+    {
+      "checked": false,
+      "text": "Donec quis orci eget orci vehicula condimentum. Curabitur in libero ut massa volutpat convallis."
+    },
+    {
+      "checked": false,
+      "text": "Fusce consequat. Nulla nisl."
+    }
+  ],
+  "color": "#126bbd",
+  "title": "Horizontal clear-thinking protocol"
+}, {
+  "type": "note",
+  "note": "Etiam justo. Etiam pretium iaculis justo. In hac habitasse platea dictumst. Etiam faucibus cursus urna. Ut tellus. Nulla ut erat id mauris vulputate elementum.",
+  "list": [
+    {
+      "checked": false,
+      "text": "Morbi porttitor lorem id ligula."
+    },
+    {
+      "checked": false,
+      "text": "Phasellus id sapien in sapien iaculis congue."
+    },
+    {
+      "checked": true,
+      "text": "Suspendisse potenti. In eleifend quam a odio."
+    },
+    {
+      "checked": false,
+      "text": "Fusce congue, diam id ornare imperdiet, sapien urna pretium nisl, ut volutpat sapien arcu sed augue."
+    },
+    {
+      "checked": true,
+      "text": "Cras in purus eu magna vulputate luctus."
+    }
+  ],
+  "color": "#313450",
+  "title": "Robust tangible circuit"
+}, {
+  "type": "list",
+  "note": "Nullam orci pede, venenatis non, sodales sed, tincidunt eu, felis. Fusce posuere felis sed lacus. Morbi sem mauris, laoreet ut, rhoncus aliquet, pulvinar sed, nisl. Nunc rhoncus dui vel sem. Sed sagittis. Nam congue, risus semper porta volutpat, quam pede lobortis ligula, sit amet eleifend pede libero quis orci. Nullam molestie nibh in lectus. Pellentesque at nulla.",
+  "list": [
+    {
+      "checked": true,
+      "text": "Morbi non quam nec dui luctus rutrum. Nulla tellus."
+    },
+    {
+      "checked": true,
+      "text": "Nullam porttitor lacus at turpis. Donec posuere metus vitae ipsum."
+    },
+    {
+      "checked": false,
+      "text": "Quisque ut erat. Curabitur gravida nisi at nibh."
+    },
+    {
+      "checked": false,
+      "text": "Donec quis orci eget orci vehicula condimentum."
+    },
+    {
+      "checked": true,
+      "text": "Sed ante. Vivamus tortor."
+    },
+    {
+      "checked": false,
+      "text": "Donec ut dolor. Morbi vel lectus in quam fringilla rhoncus."
+    },
+    {
+      "checked": false,
+      "text": "Sed accumsan felis. Ut at dolor quis odio consequat varius."
+    }
+  ],
+  "color": "#53418f",
+  "title": "Reduced tangible migration"
+}, {
+  "type": "list",
+  "note": "Suspendisse potenti. Cras in purus eu magna vulputate luctus. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vivamus vestibulum sagittis sapien. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Etiam vel augue. Vestibulum rutrum rutrum neque. Aenean auctor gravida sem. Praesent id massa id nisl venenatis lacinia.",
+  "list": [
+    {
+      "checked": false,
+      "text": "Nunc rhoncus dui vel sem."
+    },
+    {
+      "checked": false,
+      "text": "Pellentesque viverra pede ac diam. Cras pellentesque volutpat dui."
+    },
+    {
+      "checked": false,
+      "text": "Nulla ac enim. In tempor, turpis nec euismod scelerisque, quam turpis adipiscing lorem, vitae mattis nibh ligula nec sem."
+    },
+    {
+      "checked": false,
+      "text": "Nullam porttitor lacus at turpis. Donec posuere metus vitae ipsum."
+    },
+    {
+      "checked": false,
+      "text": "In hac habitasse platea dictumst. Etiam faucibus cursus urna."
+    },
+    {
+      "checked": true,
+      "text": "In congue."
+    },
+    {
+      "checked": true,
+      "text": "Donec quis orci eget orci vehicula condimentum."
+    }
+  ],
+  "color": "#ee1cc9",
+  "title": "Re-engineered coherent Graphical User Interface"
+}, {
+  "type": "note",
+  "note": "Duis mattis egestas metus.",
+  "list": [
+    {
+      "checked": true,
+      "text": "Nulla nisl."
+    },
+    {
+      "checked": false,
+      "text": "Morbi vestibulum, velit id pretium iaculis, diam erat fermentum justo, nec condimentum neque sapien placerat ante."
+    },
+    {
+      "checked": false,
+      "text": "Proin eu mi. Nulla ac enim."
+    },
+    {
+      "checked": false,
+      "text": "Mauris lacinia sapien quis libero."
+    }
+  ],
+  "color": "#f288ab",
+  "title": "Total composite frame"
+}, {
+  "type": "list",
+  "note": "Nulla ac enim. In tempor, turpis nec euismod scelerisque, quam turpis adipiscing lorem, vitae mattis nibh ligula nec sem. Duis aliquam convallis nunc. Proin at turpis a pede posuere nonummy.",
+  "list": [
+    {
+      "checked": false,
+      "text": "Praesent lectus."
+    },
+    {
+      "checked": false,
+      "text": "Quisque id justo sit amet sapien dignissim vestibulum."
+    },
+    {
+      "checked": true,
+      "text": "Vivamus in felis eu sapien cursus vestibulum. Proin eu mi."
+    },
+    {
+      "checked": true,
+      "text": "Suspendisse ornare consequat lectus."
+    }
+  ],
+  "color": "#9d2ef7",
+  "title": "Face to face multi-tasking artificial intelligence"
+}]

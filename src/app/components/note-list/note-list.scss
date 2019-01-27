@@ -1,0 +1,57 @@
+note-list {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+
+  .no-notes {
+    font-size: 1.6rem;
+    background: color($colors, light);
+    padding: 20px;
+    border-radius: 6px;
+    h2 {
+      font-size: 2rem;
+      color: color($colors, primary);
+    }
+  }
+  .note-item {
+    margin: 10px;
+    border-left: 3px solid;
+    border-bottom: 1px solid color($colors, light)!important;
+    padding: 10px;
+    &:nth-of-type(odd) {
+      background: color($colors, light);
+    }
+    h4 {
+      font-size: 1.6rem;
+      margin: 8px 0;
+    }
+    .bottom{
+      display: flex;
+      margin-top: 10px;
+      font-size: 1rem;
+      .summary{
+        flex:1;
+        display: flex;
+      }
+      .date {
+        flex:1;
+        display: flex;
+        justify-content: flex-end;
+      }
+    }
+
+    .note-list {
+      display: flex;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      overflow: hidden;
+      ion-icon {
+        margin-right: 10px;
+      }
+      span {
+        display: flex;
+        flex: 1;
+      }
+    }
+  }
+}

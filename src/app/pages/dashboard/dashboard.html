@@ -1,0 +1,43 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons start>
+      <button ion-button icon-only (click)="openSetting()">
+        <simple-line-icon name="settings"></simple-line-icon>
+      </button>
+    </ion-buttons>
+    <ion-title>dashboard</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+
+<ion-content>
+
+  <dashboard-cards [items]="dashboardCards"></dashboard-cards>
+
+  <ion-card class="tasks">
+    <ion-card-header>
+      Tasks Progress
+    </ion-card-header>
+    <ion-card-content>
+      <ion-row>
+        <ion-col>
+            <p>{{dataService.events.length}}</p>
+          <h4>All Tasks</h4>
+        </ion-col>
+        <ion-col>
+            <p>{{completedEvents}}</p>
+          <h4>Completed Task</h4>
+        </ion-col>
+      </ion-row>
+    </ion-card-content>
+  </ion-card>
+
+  <ion-card>
+    <ion-card-header>
+      Tasks by Calendar
+    </ion-card-header>
+    <ion-card-content>
+      <canvas #taskCanvas></canvas>
+    </ion-card-content>
+  </ion-card>
+</ion-content>

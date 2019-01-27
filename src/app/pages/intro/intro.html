@@ -1,0 +1,20 @@
+<ion-content>
+  <ion-slides #slider pager (ionSlideDidChange)="slideChanged()">
+    <ion-slide *ngFor="let slide of slides">
+      <div class="walkthrough">
+        <div class="walk-slides">
+          <img [src]="slide.image">
+        </div>
+        <div class="footer">
+          <h1 [innerHTML]="slide.title"></h1>
+          <p [innerHTML]="slide.paragraph"></p>
+
+        </div>
+        <div class="bottom">
+          <div class="left" (click)="previous()" *ngIf="this.currentSlideIndex !== 0">Back</div>
+          <div class="right" (click)="next()">{{this.currentSlideIndex !== this.slides.length - 1 ? 'Next' : 'Get Started'}}</div>
+        </div>
+      </div>
+    </ion-slide>
+  </ion-slides>
+</ion-content>

@@ -1,0 +1,17 @@
+<div class="no-notes" *ngIf="notes && notes.length === 0">
+  <h2>No Notes</h2>
+  You have no notes today. Do you want to create one?
+</div>
+
+<div class="note-item" [style.border-color]="note.color" *ngFor="let note of notes | orderBy: '-created'" (click)="open(note)">
+  <h4>{{note.title}}</h4>
+  <p [hidden]="note.type === 'list'">{{note.note | slice: 0:100 }}</p>
+  <div class="note-list" [hidden]="note.type === 'note'" *ngFor="let item of note.list | slice: 0:3">
+    <ion-icon [name]="item.checked ? 'checkbox-outline' : 'square-outline'" item-start></ion-icon>
+    <span>{{item.text}}</span>
+  </div>
+  <div class="bottom">
+    <div class="summary" *ngIf="note.type === 'list'">{{getSummary(note) | number: '1.0-1'}}% Complete</div>
+    <div class="date">{{note.created | amTimeAgo}}</div>
+  </div>
+</div>

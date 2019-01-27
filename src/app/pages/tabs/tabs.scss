@@ -1,0 +1,61 @@
+page-tab {
+  .icons-general {
+    display: inline-block;
+    font: normal normal 300 24px/1 Simple-Line-Icons !important;
+    font-size: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    margin-top: 2px;
+    transform: translate(0, 0);
+  }
+  .ion-ios-icon-calendar::before,
+  .ion-ios-icon-calendar-outline::before,
+  .ion-md-icon-calendar::before {
+    @extend .icons-general;
+    content: "\e075";
+  }
+  .ion-ios-icon-bar-chart::before,
+  .ion-ios-icon-bar-chart-outline::before,
+  .ion-md-icon-bar-chart::before {
+    @extend .icons-general;
+    content: "\e077";
+  }
+  .ion-ios-icon-bell::before,
+  .ion-ios-icon-bell-outline::before,
+  .ion-md-icon-bell::before {
+    @extend .icons-general;
+    content: "\e027";
+  }
+  .ion-ios-icon-note::before,
+  .ion-ios-icon-note-outline::before,
+  .ion-md-icon-note::before {
+    @extend .icons-general;
+    content: "\e060";
+  }
+  .ion-ios-icon-user::before,
+  .ion-ios-icon-user-outline::before,
+  .ion-md-icon-user::before {
+    @extend .icons-general;
+    content: "\e005";
+  }
+  a:nth-of-type(3) {
+    border-radius: 100%;
+    position: relative;
+    margin-top: -18px;
+    .icon {
+      background:  linear-gradient(to right, color($colors, primary) 0%, lighten(color($colors, primary),10%) 100%);
+      border-radius: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 60px;
+      width: 60px;
+      color: color($colors, white);
+
+    }
+    &[aria-selected=true] .tab-button-icon{
+      color: color($colors, white) !important;
+    }
+  }
+}

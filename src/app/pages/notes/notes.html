@@ -1,0 +1,26 @@
+<ion-header>
+
+  <ion-toolbar>
+    <ion-buttons start>
+      <button ion-button icon-only (click)="openSetting()">
+        <simple-line-icon name="settings"></simple-line-icon>
+      </button>
+    </ion-buttons>
+    <ion-title>notes</ion-title>
+  </ion-toolbar>
+
+</ion-header>
+
+
+<ion-content>
+
+    <note-list [notes]="notes" (openNote)="openNote($event)"></note-list>
+
+  <ion-fab right bottom>
+    <button ion-fab mini><ion-icon name="add"></ion-icon></button>
+    <ion-fab-list side="top">
+      <button ion-fab (click)="add('list')"><ion-icon name="md-list"></ion-icon></button>
+      <button ion-fab (click)="add('note')"><ion-icon name="md-create"></ion-icon></button>
+    </ion-fab-list>
+  </ion-fab>
+</ion-content>

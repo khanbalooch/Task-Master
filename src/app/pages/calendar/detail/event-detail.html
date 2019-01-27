@@ -1,0 +1,84 @@
+<ion-content [style.background]="event.color">
+  <div class="event-content">
+    <div class="header">
+      <div class="top">
+        <div class="left">
+          <button ion-button clear icon-only color="white" (click)="close()">
+        <ion-icon name="close"></ion-icon>
+      </button>
+        </div>
+        <div class="right">
+          <button ion-button clear icon-only color="white" (click)="presentMoreModal()">
+          <ion-icon name="md-more"></ion-icon>
+        </button>
+        </div>
+      </div>
+      <div class="bottom">
+        <div class="title">{{event.title}}</div>
+        <div class="location">{{event.location}}</div>
+      </div>
+    </div>
+    <div class="body">
+      <div class="scroll">
+        <div class="flex-item">
+          <div class="icon">
+            <simple-line-icon name="calendar"></simple-line-icon>
+          </div>
+          <div class="left">
+            <p>From</p>
+            <p>To</p>
+          </div>
+          <div class="right">
+            <p>{{event.start | date: 'medium'}}</p>
+            <p>{{event.end | date: 'medium'}}</p>
+          </div>
+        </div>
+        <div class="flex-item" *ngIf="event.reminders && event.reminders.length > 0">
+          <div class="icon">
+            <simple-line-icon name="bell"></simple-line-icon>
+          </div>
+          <div class="left">
+            <p>Remind At</p>
+          </div>
+          <div class="right">
+            <p *ngFor="let reminder of event.reminders">{{reminder | date: 'medium'}}</p>
+          </div>
+        </div>
+        <div class="flex-item" *ngIf="event.location">
+          <div class="icon">
+            <simple-line-icon name="pin"></simple-line-icon>
+          </div>
+          <div class="left">
+            <p>Location</p>
+          </div>
+          <div class="right">
+            <p>{{event.location}}</p>
+          </div>
+        </div>
+        <div class="flex-item" *ngIf="event.invites && event.invites.length > 0">
+          <div class="icon">
+            <simple-line-icon name="people"></simple-line-icon>
+          </div>
+          <div class="left">
+            <p>People</p>
+          </div>
+          <div class="right">
+            <div class="images">
+              <div class="image" *ngFor="let contact of event.invites | slice: 0: 5;" [style.background-image]="'url(' + contact.picture + ')'"></div>
+              <span *ngIf="event.invites.length > 5"> +{{event.invites.length - 5}}</span>
+            </div>
+          </div>
+        </div>
+        <div class="flex-note" *ngIf="event.notes">
+          <div class="top">
+            <p>
+              <simple-line-icon name="note"></simple-line-icon> Notes</p>
+          </div>
+          <div class="bottom">
+            <p>{{event.notes}}</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</ion-content>

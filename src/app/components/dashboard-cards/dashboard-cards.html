@@ -1,0 +1,6 @@
+<button ion-button class="item" *ngFor="let card of items" [style.color]="card.color" (click)="goToPage(card.component)">
+      <simple-line-icon [name]="card.icon"></simple-line-icon>
+      <div class="text">{{card.text}}</div>
+      <div class="number">{{card.number}}</div>
+      <div class="subtext">{{card.subtext}}</div>
+    </button>

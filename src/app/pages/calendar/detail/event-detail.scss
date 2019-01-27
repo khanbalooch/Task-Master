@@ -1,0 +1,124 @@
+page-event-detail {
+  .event-content {
+    display: flex; // flex:1;
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+    .header {
+      display: flex;
+      flex-direction: column;
+      .top {
+        display: flex;
+        &>.left {
+          display: flex;
+          flex: 1;
+        }
+        &>.right {
+          display: flex;
+          flex: 1;
+          justify-content: flex-end;
+        }
+      }
+      &>.bottom {
+        padding: 0 20px 30px;
+        display: flex;
+        flex: 1;
+        flex-direction: column;
+        align-items: center;
+        &>.title,
+        &>.location {
+          color: color($colors, white);
+          text-align: center;
+        }
+        &>.title {
+          font-size: 2rem;
+          font-weight: 400;
+          padding: 0 20px 20px;
+        }
+        &>.location {
+          font-weight: 300;
+          font-size: 1.6rem;
+        }
+      }
+    }
+    &>.body {
+      display: flex;
+      flex-direction: column;
+      flex: 2;
+      background: color($colors, white);
+      position: relative;
+      .scroll {
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        overflow-y: auto;
+        width:100%;
+
+        &>.flex-item {
+          display: flex;
+          padding: 15px 20px;
+          border-bottom: 1px solid color($colors, light);
+          align-items: center;
+          p {
+            margin: 5px 0;
+          }
+          &>.icon {
+            display: flex;
+            padding-right: 20px;
+          }
+          &>.left {
+            display: flex;
+            flex: .5;
+            flex-direction: column;
+            font-weight: 500;
+          }
+          &>.right {
+            display: flex;
+            flex: 1.5;
+            flex-direction: column;
+            align-items: flex-end;
+            .images {
+              display: flex;
+              align-items: center;
+              width: 100%;
+              height: 100%;
+              padding-left: 15px;
+              .image {
+                width: 30px;
+                height: 30px;
+                margin: 0 3px;
+                border-radius: 100%;
+                background-position: center;
+                background-size: cover;
+              }
+            }
+          }
+        }
+        &>.flex-note {
+          display: flex;
+          padding: 15px 20px;
+          flex-direction: column;
+          &>.top {
+            font-weight: 500;
+            simple-line-icon{
+              margin-right: 20px;
+            }
+          }
+          &>.bottom {
+            display: flex;
+            flex: 1;
+            text-align: justify;
+            p{
+              margin:0;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.popover-ios .popover-content{
+  width:250px;
+}
