@@ -21,6 +21,7 @@ import { SettingPageModule } from './pages/setting/setting.module';
 import { ComponentsModule } from './components/components.module';
 import { DataService, DataPlaceholderService } from './shared/services';
 import { Keyboard } from '@ionic-native/keyboard/ngx';
+import { TabsPageModule } from './pages/tabs/tabs.module';
 
 export const APP_CONFIG = {
   iconMode: 'ios',
@@ -33,18 +34,14 @@ export const APP_CONFIG = {
 };
 
 @NgModule({
-  declarations: [AppComponent
-    // TabsPage
-  ],
-  entryComponents: [AppComponent
-    // TabsPage
-  ],
+  declarations: [AppComponent],
   imports: [
     IonicModule.forRoot(),
     AppRoutingModule,
     HttpModule,
     BrowserAnimationsModule,
     ComponentsModule,
+    TabsPageModule,
     IntroPageModule,
     DashboardPageModule,
     TaskPageModule,
@@ -62,7 +59,6 @@ export const APP_CONFIG = {
     SplashScreen,
     Keyboard,
     { provide: RouteReuseStrategy, useClass: IonicRouteStrategy }
-    /*{ provide: ErrorHandler, useClass: IonicErrorHandler }*/
   ],
   bootstrap: [AppComponent]
 })
