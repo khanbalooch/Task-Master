@@ -1,18 +1,18 @@
-$colors: (
-  primary:    #5B69C2,
-  secondary:  #3F88C5,
-  tertiary:   #FFBA08,
-  alternative: #2B8A91,
-  danger:     #D00000,
-  light:      #f4f4f4,
-  dark:       #222,
-  dark-alt: #3B4649,
-  stable: #9E9EA2,
-  white: #fff,
-  facebook:   #3b5998,
-  google:     #dd4b39,
-);
-page-event-detail {
+// $colors: (
+//   primary:    #5B69C2,
+//   secondary:  #3F88C5,
+//   tertiary:   #FFBA08,
+//   alternative: #2B8A91,
+//   danger:     #D00000,
+//   light:      #f4f4f4,
+//   dark:       #222,
+//   dark-alt: #3B4649,
+//   stable: #9E9EA2,
+//   white: #fff,
+//   facebook:   #3b5998,
+//   google:     #dd4b39,
+// );
+:host {
   .event-content {
     display: flex; // flex:1;
     width: 100%;
@@ -41,7 +41,7 @@ page-event-detail {
         align-items: center;
         &>.title,
         &>.location {
-          color: color($colors, white);
+          color: color(var(--ion-color-white));
           text-align: center;
         }
         &>.title {
@@ -59,7 +59,7 @@ page-event-detail {
       display: flex;
       flex-direction: column;
       flex: 2;
-      background: color($colors, white);
+      background: color(var(--ion-color-white));
       position: relative;
       .scroll {
         position: absolute;
@@ -72,7 +72,7 @@ page-event-detail {
         &>.flex-item {
           display: flex;
           padding: 15px 20px;
-          border-bottom: 1px solid color($colors, light);
+          border-bottom: 1px solid color(var(--ion-color-light));
           align-items: center;
           p {
             margin: 5px 0;

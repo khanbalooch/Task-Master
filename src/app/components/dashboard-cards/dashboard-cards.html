@@ -1,6 +1,23 @@
-<button ion-button class="item" *ngFor="let card of items" [style.color]="card.color" (click)="goToPage(card.component)">
-      <simple-line-icon [name]="card.icon"></simple-line-icon>
-      <div class="text">{{card.text}}</div>
-      <div class="number">{{card.number}}</div>
-      <div class="subtext">{{card.subtext}}</div>
-    </button>
+<!-- <button ion-button class="item" color="primary" *ngFor="let card of items" [style.color]="card.color" (click)="goToPage(card.component)">
+  <simple-line-icon [name]="card.icon"></simple-line-icon>
+  <div class="text">{{card.text}}</div>
+  <div class="number">{{card.number}}</div>
+  <div class="subtext">{{card.subtext}}</div>
+</button> -->
+<ion-button class="item" color="{{card.color}}" *ngFor="let card of items" [style.color]="card.color" (click)="goToPage(card.component)">
+  <!-- <simple-line-icon [name]="card.icon"></simple-line-icon> -->
+  <ion-list align-self-center>
+    <ion-item color="{{card.color}}" lines="none">
+      <span class="{{card.icon}}" center></span>
+    </ion-item>
+    <ion-item color="{{card.color}}" lines="none">
+      <div class="text" center>{{card.text}}</div>
+    </ion-item>
+    <ion-item color="{{card.color}}" lines="none">
+      <div class="number" center>{{card.number}}</div>
+    </ion-item>
+    <ion-item color="{{card.color}}" *ngIf="card.subtext > 0" lines="none">
+      <div class="subtext" center>{{card.subtext}}</div>
+    </ion-item>
+  </ion-list>
+</ion-button>

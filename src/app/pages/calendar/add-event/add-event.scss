@@ -1,31 +1,32 @@
-$colors: (
-  primary:    #5B69C2,
-  secondary:  #3F88C5,
-  tertiary:   #FFBA08,
-  alternative: #2B8A91,
-  danger:     #D00000,
-  light:      #f4f4f4,
-  dark:       #222,
-  dark-alt: #3B4649,
-  stable: #9E9EA2,
-  white: #fff,
-  facebook:   #3b5998,
-  google:     #dd4b39,
-);
-add-event {
+// $colors: (
+//   primary:    #5B69C2,
+//   secondary:  #3F88C5,
+//   tertiary:   #FFBA08,
+//   alternative: #2B8A91,
+//   danger:     #D00000,
+//   light:      #f4f4f4,
+//   dark:       #222,
+//   dark-alt: #3B4649,
+//   stable: #9E9EA2,
+//   white: #fff,
+//   facebook:   #3b5998,
+//   google:     #dd4b39,
+// );
+
+:host {
   display: flex;
   flex-direction: column;
   height: 100%;
   width: 100%;
   ion-content{
-    background: color($colors, light) !important;
+    background: color(var(--ion-color-light)) !important;
   }
   .label {
     display: block;
     font-size: 1.3rem;
     font-weight: 500;
     margin-bottom: 8px;
-    color: color($colors, stable);
+    color: color(var(--ion-color-stable));
   }
   input, textarea {
     border: none;
@@ -37,10 +38,10 @@ add-event {
     display: flex;
     padding: 20px 20px 20px;
     &:nth-of-type(odd) {
-      background: color($colors, light);
+      background: color(var(--ion-color-light));
     }
     &:nth-of-type(even) {
-      background: color($colors, white);
+      background: color(var(--ion-color-white));
     }
   }
   .title-section {
@@ -57,7 +58,7 @@ add-event {
       width: 25px;
       height: 25px;
       border-radius: 100%;
-      border: 1px solid color($colors, stable);
+      border: 1px solid color(var(--ion-color-white));
     }
   }
   .date-section,
@@ -74,7 +75,7 @@ add-event {
       }
     }
     &>.left {
-      border-right: 1px solid color($colors, light);
+      border-right: 1px solid color(var(--ion-color-light));
       padding-right: 20px;
     }
     &>.right {

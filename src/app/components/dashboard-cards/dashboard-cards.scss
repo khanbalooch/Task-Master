@@ -1,33 +1,91 @@
-dashboard-cards {
+:host {
+  display: flex;
+  flex: 1;
+  &>.item {
     display: flex;
     flex: 1;
-    &>.item {
-      display: flex;
-      flex: 1;
-      flex-direction: column;
-      height: auto !important;
-      align-items: center;
-      padding:0;
-      .button-inner {
-        padding:10px 0px;
-        flex-direction: column!important;
-        justify-content: center;
-        align-items: center;
-        flex: 1;
-        simple-line-icon {
-          display: flex;
-          flex: 1;
-          font-size: 3rem;
-          justify-content: center;
-        }
-        &>.text {
-          display: flex;
-          flex: 1;
-          margin: 10px 0;
-          font-size: 1.2rem;
-          font-weight: 300;
-          justify-content: center;
-        }
-      }
-    }
+    flex-direction: column;
+    height: auto !important;
+    align-items: center;
+    padding:0;
+    width: 33.33%;
+  }
+  simple-line-icon {
+    display: flex;
+    flex: 1;
+    font-size: 3rem;
+    justify-content: center;
+  }
+  .text {
+    display: flex;
+    flex: 1;
+    margin: 10px 0;
+    font-size: 16px;
+    font-weight: 300;
+    justify-content: center;
+  }
+  ion-button ion-item {
+    --padding-start: 0;
+    --padding-end: 0;
+    --inner-padding-start: 0;
+    --inner-padding-end: 0;
+    --padding-top: 0;
+    --inner-padding-top: 0;
+    --padding-bottom: 0;
+    --inner-padding-bottom:0;
+    height: 36px;
+
+  }
+  ion-item span {
+    font-size: 20px;
+  }
+  ion-item span,.number {
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+  }
+  ion-button ion-list {
+    padding-top: 0;
+    padding-bottom: 0;
+    margin: 0;
+  }
+  
 }
+
+
+
+// :host {
+//   dashboard-cards {
+//       display: flex;
+//       flex: 1;
+//   }
+//   .item {
+//       display: flex;
+//       flex: 1;
+//       flex-direction: column;
+//       height: auto !important;
+//       align-items: center;
+//       padding:0;
+//   }
+//   .button-inner {
+//     padding:10px 0px;
+//     flex-direction: column!important;
+//     justify-content: center;
+//     align-items: center;
+//     flex: 1;
+//   }
+//   simple-line-icon {
+//     display: flex;
+//     flex: 1;
+//     font-size: 3rem;
+//     justify-content: center;
+//   }
+//   .text {
+//     display: flex;
+//     flex: 1;
+//     margin: 10px 0;
+//     font-size: 1.2rem;
+//     font-weight: 300;
+//     justify-content: center;
+//   }
+// }
