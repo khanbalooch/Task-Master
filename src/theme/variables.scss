@@ -6,10 +6,12 @@
 $font-path: "../assets/fonts";
 
 $fa-font-path: $font-path;
-//@import "../../node_modules/font-awesome/scss/font-awesome";
+@import "~font-awesome/css/font-awesome.min.css";
+
 
 $simple-line-font-path: $font-path + "/";
-//@import "../../node_modules/simple-line-icons/css/simple-line-icons";
+@import "~simple-line-icons/css/simple-line-icons.css";
+
 
 
 // The app direction is used to include
@@ -39,30 +41,44 @@ $app-direction: ltr;
 // colors so you can add, rename and remove colors as needed.
 // The "primary" color is the only required color in the map.
 
-$colors: (
-  primary:    #5B69C2,
-  secondary:  #3F88C5,
-  tertiary:   #FFBA08,
-  alternative: #2B8A91,
-  danger:     #D00000,
-  light:      #f4f4f4,
-  dark:       #222,
-  dark-alt: #3B4649,
-  stable: #9E9EA2,
-  white: #fff,
-  facebook:   #3b5998,
-  google:     #dd4b39,
-);
+// $colors: (
+//   primary:    #5B69C2,
+//   secondary:  #3F88C5,
+//   tertiary:   #FFBA08,
+//   alternative: #2B8A91,
+//   danger:     #D00000,
+//   light:      #f4f4f4,
+//   dark:       #222,
+//   dark-alt: #3B4649,
+//   stable: #9E9EA2,
+//   white: #fff,
+//   facebook:   #3b5998,
+//   google:     #dd4b39,
+// );
+// :root {
+//   --ion-color-primary: #5B69C2;
+//   --ion-color-secondary:  #3F88C5;
+//   --ion-color-tertiary:   #FFBA08;
+//   --ion-color-alternative: #2B8A91;
+//   --ion-color-danger:     #D00000;
+//   --ion-color-light:      #f4f4f4;
+//   --ion-color-dark:       #222;
+//   --ion-color-dark-alt: #3B4649;
+//   --ion-color-stable: #9E9EA2;
+//   --ion-color-white: #fff;
+//   --ion-color-facebook:   #3b5998;
+//   --ion-color-google:     #dd4b39;
 
-$toolbar-ios-button-color: color($colors, dark-alt);
-$toolbar-ios-text-color: color($colors, dark-alt);
-$toolbar-ios-title-text-color: color($colors, dark-alt);
-$toolbar-ios-title-font-weight: 400;
-$toolbar-ios-border-color: transparent;
-$toolbar-background: color($colors, white);
-$tabs-background: color($colors, white);
-$text-color:  color($colors, dark-alt);
-$tabs-ios-tab-text-color: color($colors, dark-alt);
+// }
+// $toolbar-ios-button-color: var(--ion-color-dark-alt);
+// $toolbar-ios-text-color: color(var(--ion-color-dark-alt));
+// $toolbar-ios-title-text-color: color(var(--ion-color-dark-alt));
+// $toolbar-ios-title-font-weight: 400;
+// $toolbar-ios-border-color: transparent;
+// $toolbar-background: color(var(--ion-color-white));
+// $tabs-background: color(var(--ion-color-white));
+// $text-color:  color(var(--ion-color-dark-alt));
+// $tabs-ios-tab-text-color: color(var(--ion-color-dark-alt));
 
 // App Theme
 // --------------------------------------------------
@@ -71,8 +87,9 @@ $tabs-ios-tab-text-color: color($colors, dark-alt);
 // so that the above variables are used and Ionic's
 // default are overridden.
 
-//@import "../theme/variables";
+//@import "../theme/variables.scss";
 //@import "ionic.theme.default";
+
 
 
 // Ionicons
@@ -81,6 +98,7 @@ $tabs-ios-tab-text-color: color($colors, dark-alt);
 // http://ionicframework.com/docs/ionicons/
 
 //@import "ionic.ionicons";
+@import "~ionicons/dist/css/ionicons.min.css";
 
 
 // Fonts
@@ -88,3 +106,4 @@ $tabs-ios-tab-text-color: color($colors, dark-alt);
 
 //@import "roboto";
 //@import "noto-sans";
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans|Roboto');

@@ -12,7 +12,8 @@ $colors: (
   facebook:   #3b5998,
   google:     #dd4b39,
 );
-page-profile {
+// page-profile {
+  :host {
   .scroll-content{
     overflow-y: hidden;
   }

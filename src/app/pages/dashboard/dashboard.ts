@@ -31,14 +31,14 @@ export class DashboardPage implements OnInit {
     this.dashboardCards = [
       {
         component: CalendarPage,
-        icon: 'calendar',
+        icon: 'icon-calendar',
         text: 'Tasks',
         color: 'primary',
         number: this.dataService.events.length
       },
       {
         component: TaskPage,
-        icon: 'note',
+        icon: 'icon-note',
         text: 'Notes',
         color: 'secondary',
         number: this.dataService.notes.filter(note => {
@@ -47,9 +47,9 @@ export class DashboardPage implements OnInit {
       },
       {
         component: NotesPage,
-        icon: 'list',
+        icon: 'icon-list',
         text: 'Checklists',
-        color: 'alternative',
+        color: 'tertiary',
         number: this.dataService.notes.filter(note => {
           if (note.type === 'list') {return note;}
         }).length
@@ -91,7 +91,8 @@ export class DashboardPage implements OnInit {
         labels: ["Month", "Week", "Today"],
         datasets: [{
           label: 'Task by Calendar',
-          data: taskData,
+          //data: taskData,
+          data: [10,20,30],
           backgroundColor: [
             'rgba(255, 99, 132, 0.7)',
             'rgba(54, 162, 235, 0.7)',
