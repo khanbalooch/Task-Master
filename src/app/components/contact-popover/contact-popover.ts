@@ -7,7 +7,8 @@ import { DataPlaceholderService } from '../../shared/services';
 
 @Component({
   selector: 'contact-popover',
-  templateUrl: 'contact-popover.html'
+  templateUrl: 'contact-popover.html',
+  styleUrls: ['./contact-popover.scss'],
 })
 export class ContactPopoverComponent {
 

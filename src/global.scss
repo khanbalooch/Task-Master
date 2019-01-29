@@ -10,8 +10,21 @@
 @import '~@ionic/angular/css/text-transformation.css';
 @import '~@ionic/angular/css/flex-utils.css';
 
-
-/*$toolbar-ios-button-color: color($colors, dark-alt);
+$colors: (
+  primary:    #5B69C2,
+  secondary:  #3F88C5,
+  tertiary:   #FFBA08,
+  alternative:#2B8A91,
+  danger:     #D00000,
+  light:      #f4f4f4,
+  dark:       #222,
+  dark-alt:   #3B4649,
+  stable:     #9E9EA2,
+  white:      #fff,
+  facebook:   #3b5998,
+  google:     #dd4b39,
+);
+$toolbar-ios-button-color: color($colors, dark-alt);
 $toolbar-ios-text-color: color($colors, dark-alt);
 $toolbar-ios-title-text-color: color($colors, dark-alt);
 $toolbar-ios-title-font-weight: 400;
@@ -51,4 +64,4 @@ $tabs-ios-tab-text-color: color($colors, dark-alt);
       top: -8px;
       border: 1px solid color($colors, stable);
     }
-  }*/
+  }

@@ -8,6 +8,7 @@ import { Router } from '@angular/router';
 @Component({
   selector: 'page-notes',
   templateUrl: 'notes.html',
+  styleUrls: ['notes.scss']
 })
 export class NotesPage implements OnInit {
 

@@ -9,6 +9,7 @@ import { ProfilePage } from '../profile/profile';
 @Component({
   selector: 'page-tab',
   templateUrl: 'tabs.html',
+  styleUrls: ['tabs.scss']
 })
 export class TabsPage {
 

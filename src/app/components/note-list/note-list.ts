@@ -3,7 +3,8 @@ import { Component, Input, Output, EventEmitter } from '@angular/core';
 
 @Component({
   selector: 'note-list',
-  templateUrl: 'note-list.html'
+  templateUrl: 'note-list.html',
+  styleUrls: ['note-list.scss']
 })
 export class NoteListComponent {
 

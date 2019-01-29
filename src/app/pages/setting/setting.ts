@@ -5,6 +5,7 @@ import { Router } from '@angular/router';
 @Component({
   selector: 'page-setting',
   templateUrl: 'setting.html',
+  styleUrls: ['setting.scss']
 })
 export class SettingPage {
 

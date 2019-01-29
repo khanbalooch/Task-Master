@@ -10,6 +10,7 @@ import { Router } from '@angular/router';
 @Component({
   selector: 'page-profile',
   templateUrl: 'profile.html',
+  styleUrls: ['profile.scss']
 })
 export class ProfilePage implements OnInit {
 

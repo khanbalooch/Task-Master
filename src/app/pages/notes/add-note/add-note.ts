@@ -7,7 +7,8 @@ import { Router } from '@angular/router';
 
 @Component({
   selector: 'add-note',
-  templateUrl: 'add-note.html'
+  templateUrl: 'add-note.html',
+  styleUrls: ['add-note.scss']
 })
 export class AddNoteComponent {
 

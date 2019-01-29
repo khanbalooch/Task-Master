@@ -3,7 +3,8 @@ import * as moment from 'moment';
 
 @Component({
   selector: 'event-list',
-  templateUrl: 'event-list.html'
+  templateUrl: 'event-list.html',
+  styleUrls: ['./event-list.scss'],
 })
 export class EventListComponent {
 

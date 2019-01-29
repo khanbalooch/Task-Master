@@ -6,6 +6,7 @@ import { Router } from '@angular/router';
 @Component({
   selector: 'page-task',
   templateUrl: 'task.html',
+  styleUrls: ['task.scss']
 })
 export class TaskPage implements OnInit {
 

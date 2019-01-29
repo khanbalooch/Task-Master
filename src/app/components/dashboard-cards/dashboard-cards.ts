@@ -4,7 +4,8 @@ import { Route, Router } from '@angular/router';
 
 @Component({
   selector: 'dashboard-cards',
-  templateUrl: 'dashboard-cards.html'
+  templateUrl: 'dashboard-cards.html',
+  styleUrls: ['./dashboard-cards.scss'],
 })
 
 export class DashboardCardsComponent {

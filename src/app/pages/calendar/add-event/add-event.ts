@@ -8,7 +8,8 @@ import { ColorsComponent, ContactPopoverComponent } from '../../../components/co
 
 @Component({
   selector: 'add-event',
-  templateUrl: 'add-event.html'
+  templateUrl: 'add-event.html',
+  styleUrls: ['add-event.scss']
 })
 export class AddEvent {
 

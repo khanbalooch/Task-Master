@@ -7,6 +7,7 @@ import { Router } from '@angular/router';
 @Component({
   selector: 'page-event-detail',
   templateUrl: 'event-detail.html',
+  styleUrls: ['event-detail.scss']
 })
 export class EventDetail implements OnInit {
 

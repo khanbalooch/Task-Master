@@ -8,7 +8,8 @@ import { Component } from '@angular/core';
  */
 @Component({
   selector: 'forgot',
-  templateUrl: 'forgot.html'
+  templateUrl: 'forgot.html',
+  styleUrls: ['forgot.scss']
 })
 export class ForgotComponent {
 

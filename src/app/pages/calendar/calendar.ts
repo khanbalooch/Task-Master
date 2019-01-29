@@ -13,6 +13,7 @@ import { Router } from '@angular/router';
 @Component({
   selector: 'page-calendar',
   templateUrl: 'calendar.html',
+  styleUrls: ['calendar.scss'],
   animations: [slideDownAnimation]
 })
 export class CalendarPage implements OnInit {

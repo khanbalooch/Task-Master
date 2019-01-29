@@ -4,7 +4,8 @@ import * as _ from 'lodash';
 
 @Component({
   selector: 'colors',
-  templateUrl: 'colors.html'
+  templateUrl: 'colors.html',
+  styleUrls: ['./colors.scss'],
 })
 export class ColorsComponent {
 
