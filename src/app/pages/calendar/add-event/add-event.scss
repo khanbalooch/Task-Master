@@ -19,14 +19,15 @@
   height: 100%;
   width: 100%;
   ion-content{
-    background: color(var(--ion-color-light)) !important;
+    background: var(--ion-color-light) !important;
   }
   .label {
     display: block;
-    font-size: 1.3rem;
+    font-size: 0.8rem;
     font-weight: 500;
     margin-bottom: 8px;
-    color: color(var(--ion-color-stable));
+    color: var(--ion-color-stable);
+    font-family: 'Roboto', sans-serif;
   }
   input, textarea {
     border: none;
@@ -38,10 +39,10 @@
     display: flex;
     padding: 20px 20px 20px;
     &:nth-of-type(odd) {
-      background: color(var(--ion-color-light));
+      background: var(--ion-color-light);
     }
     &:nth-of-type(even) {
-      background: color(var(--ion-color-white));
+      background: var(--ion-color-white);
     }
   }
   .title-section {
@@ -58,7 +59,7 @@
       width: 25px;
       height: 25px;
       border-radius: 100%;
-      border: 1px solid color(var(--ion-color-white));
+      border: 1px solid var(--ion-color-white);
     }
   }
   .date-section,
@@ -75,7 +76,7 @@
       }
     }
     &>.left {
-      border-right: 1px solid color(var(--ion-color-light));
+      border-right: 1px solid var(--ion-color-light);
       padding-right: 20px;
     }
     &>.right {
@@ -98,7 +99,8 @@
     }
     &>.right {
       display: flex;
-      width: 10%;
+      // width: 10%;
+      width: 30%;
       position: relative;
       align-items: center;
     }

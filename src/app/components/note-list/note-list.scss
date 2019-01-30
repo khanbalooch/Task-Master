@@ -18,22 +18,22 @@
   flex: 1;
 
   .no-notes {
-    font-size: 1.6rem;
-    background: color(var(--ion-color-light));
+    font-size: 1rem;
+    background: var(--ion-color-light);
     padding: 20px;
     border-radius: 6px;
     h2 {
-      font-size: 2rem;
-      color: color(var(--ion-color-primary));
+      font-size: 1.4rem;
+      color: var(--ion-color-primary);
     }
   }
   .note-item {
     margin: 10px;
     border-left: 3px solid;
-    border-bottom: 1px solid color(var(--ion-color-light))!important;
+    border-bottom: 1px solid var(--ion-color-light)!important;
     padding: 10px;
     &:nth-of-type(odd) {
-      background: color(var(--ion-color-light));
+      background: var(--ion-color-light);
     }
     h4 {
       font-size: 1.6rem;

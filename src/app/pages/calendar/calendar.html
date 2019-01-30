@@ -1,22 +1,25 @@
 <ion-header>
-
   <ion-toolbar>
-    <ion-buttons start>
-      <button ion-button icon-only (click)="openSetting()">
-            <simple-line-icon name="settings"></simple-line-icon>
-          </button>
+    <ion-buttons slot="start">
+      <ion-button ion-button icon-only (click)="openSetting()">
+        <!-- <simple-line-icon name="settings"></simple-line-icon> -->
+        <span class="icon-settings"></span>
+      </ion-button>
     </ion-buttons>
     <ion-title>
       <span (click)="presentMonthModal($event)">{{month.format("MMMM, YYYY")}}</span>
-      <simple-line-icon name="arrow-down" class="title-caret"></simple-line-icon>
+      <!-- <simple-line-icon name="arrow-down" class="title-caret"></simple-line-icon> -->
+      <span class="icon-arrow-down title-caret"></span>
     </ion-title>
-    <ion-buttons end>
-      <button ion-button icon-only color="primary" (click)="previous()">
-          <simple-line-icon name="arrow-left"></simple-line-icon>
-        </button>
-      <button ion-button icon-only color="primary" (click)="next()">
-            <simple-line-icon name="arrow-right"></simple-line-icon>
-          </button>
+    <ion-buttons slot="end">
+      <ion-button ion-button icon-only color="primary" (click)="previous()">
+        <!-- <simple-line-icon name="arrow-left"></simple-line-icon> -->
+        <span class="icon-arrow-left"></span>
+      </ion-button>
+      <ion-button ion-button icon-only color="primary" (click)="next()">
+        <!-- <simple-line-icon name="arrow-right"></simple-line-icon> -->
+        <span class="icon-arrow-right"></span>
+      </ion-button>
     </ion-buttons>
   </ion-toolbar>
 
@@ -41,7 +44,8 @@
 
     <div class="list" *ngIf="selected" @slideDownAnimation>
       <div class="header">{{selected | amDateFormat:'LL'}}
-        <simple-line-icon name="calendar" class="pull-right"></simple-line-icon>
+        <!-- <simple-line-icon name="calendar" class="pull-right"></simple-line-icon> -->
+        <span class="icon-calendar pull-right"></span>
       </div>
 
       <div class="content">
@@ -51,7 +55,9 @@
       </div>
     </div>
   </div>
-  <ion-fab right bottom>
-      <button mini ion-fab (click)="add()"><ion-icon name="add"></ion-icon></button>
+  <ion-fab horizontal="end" vertical="bottom" slot="fixed">
+    <ion-fab-button size="small" ion-fab (click)="add()">
+      <ion-icon name="add"></ion-icon>
+    </ion-fab-button>
   </ion-fab>
 </ion-content>

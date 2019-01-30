@@ -1,10 +1,13 @@
 <ion-header>
   <ion-toolbar color="primary">
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="dashboard"></ion-back-button>
+    </ion-buttons>
     <ion-title>Add Event</ion-title>
-    <ion-buttons end>
-      <button ion-button large (click)="save()">
-          <ion-icon name="md-checkmark"></ion-icon>
-            </button>
+    <ion-buttons slot="end">
+      <ion-button ion-button large (click)="save()">
+        <ion-icon name="md-checkmark"></ion-icon>
+      </ion-button>
     </ion-buttons>
   </ion-toolbar>
 </ion-header>
@@ -28,8 +31,12 @@
     </div>
   </div>
   <div class="all-day-section form-item">
-    <ion-label>All Day</ion-label>
-    <ion-toggle></ion-toggle>
+    <div class="left">
+      <ion-label>All Day</ion-label>
+    </div>
+    <div class="right">
+      <ion-toggle></ion-toggle>
+    </div>
   </div>
   <div class="time-section form-item">
     <div class="left">
@@ -42,42 +49,54 @@
     </div>
   </div>
   <div class="remind-section form-item">
-    <ion-label>Remind Me</ion-label>
-    <ion-toggle color="secondary" [(ngModel)]="showRemind"></ion-toggle>
+    <div class="left">
+      <ion-label>Remind Me</ion-label>
+    </div>
+    <div class="right">
+      <ion-toggle color="secondary" [(ngModel)]="showRemind"></ion-toggle>
+    </div>
   </div>
   <div class="remind-detail form-item" [hidden]="!showRemind">
     <div class="content" *ngFor="let reminder of event.reminders; let i = index; let first = first; let last = last;">
       <div class="left">
         <ion-select [(ngModel)]="event.reminders[i]" placeholder="Set Reminder">
-          <ion-select-option  *ngFor="let time of remindTimes" value="time">{{getHumanize(time)}}</ion-select-option>
+          <ion-select-option *ngFor="let time of remindTimes" value="time">{{getHumanize(time)}}</ion-select-option>
         </ion-select>
       </div>
       <div class="right">
-        <button *ngIf="!last" ion-button clear color="danger" icon-only (click)="removeReminder(i)">
-        <ion-icon name="remove"></ion-icon>
-      </button>
-        <button ion-button clear color="secondary" icon-only (click)="addReminder()">
-        <ion-icon name="add"></ion-icon>
-      </button>
+        <ion-button *ngIf="!last" ion-button fill="clear" color="danger" icon-only (click)="removeReminder(i)">
+          <ion-icon name="remove"></ion-icon>
+        </ion-button>
+        <ion-button ion-button fill="clear" color="secondary" icon-only (click)="addReminder()">
+          <ion-icon name="add"></ion-icon>
+        </ion-button>
       </div>
     </div>
   </div>
   <div class="location-section form-item">
-    <ion-label>Add Location</ion-label>
-    <ion-toggle color="secondary" [(ngModel)]="showLocation"></ion-toggle>
+    <div class="left">
+      <ion-label>Add Location</ion-label>
+    </div>
+    <div class="right">
+      <ion-toggle color="secondary" [(ngModel)]="showLocation"></ion-toggle>
+    </div>
   </div>
   <div class="location-detail form-item" [hidden]="!showLocation">
     <div class="left">
       <input type="text" placeholder="Enter a location" [(ngModel)]="event.location" (ngModelChange)="searchLocations($event)"></div>
     <ion-list no-lines *ngIf="locations.length > 0">
-      <button ion-item *ngFor="let location of locations" (click)="locationSelected(location)">
+      <ion-button ion-item *ngFor="let location of locations" (click)="locationSelected(location)">
         {{ location.place + ', ' + location.city + ', ' + location.country }}
-      </button>
+      </ion-button>
     </ion-list>
   </div>
   <div class="invites-section form-item">
-    <ion-label>Add Invites</ion-label>
-    <ion-toggle color="secondary" [(ngModel)]="showInvites"></ion-toggle>
+    <div class="left">
+      <ion-label>Add Invites</ion-label>
+    </div>
+    <div class="right">
+      <ion-toggle color="secondary" [(ngModel)]="showInvites"></ion-toggle>
+    </div>
   </div>
   <div class="invites-detail form-item" [hidden]="!showInvites">
     <div class="left">
@@ -86,14 +105,18 @@
       </div>
     </div>
     <div class="right">
-      <button ion-button clear color="secondary" icon-only (click)="addInvite()">
+      <ion-button ion-button fill="clear" color="secondary" icon-only (click)="addInvite()">
         <ion-icon name="add"></ion-icon>
-      </button>
+      </ion-button>
     </div>
   </div>
   <div class="notes-section form-item">
-    <ion-label>Add Notes</ion-label>
-    <ion-toggle color="secondary" [(ngModel)]="showNotes"></ion-toggle>
+    <div class="left">
+      <ion-label>Add Notes</ion-label>
+    </div>
+    <div class="right">
+      <ion-toggle color="secondary" [(ngModel)]="showNotes"></ion-toggle>
+    </div>
   </div>
   <div class="notes-detail form-item" *ngIf="showNotes">
     <textarea elastic-textarea [(ngModel)]="event.notes" placeholder="Enter note"></textarea>

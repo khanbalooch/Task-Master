@@ -1,7 +1,3 @@
-// @import '~bootstrap/scss/_functions.scss';
-// @import '~bootstrap/scss/_mixins.scss';
-// @import '~bootstrap/scss/_variables.scss';
-
 // $colors: (
 //   primary:    #5B69C2,
 //   secondary:  #3F88C5,
@@ -18,17 +14,20 @@
 // );
 
 
-page-calendar {
+:host {
+  ion-buttons ion-button {
+    --color:  var(--ion-color-dark-alt);
+  }
+  .title-caret {
+    display: block;
+    font-size: .6rem;
+    margin-top: 3px;
+    text-align: center;
+  }
   .scroll-content {
     overflow-y: hidden;
   }
-  .toolbar-title {
-    .title-caret {
-      display: block;
-      font-size: .6rem;
-      margin-top: 3px;
-    }
-  }
+  
   .bar-button-ios[icon-only] {
     min-width: 1.9em !important;
   }
@@ -54,19 +53,19 @@ page-calendar {
         text-align: center;
         display: flex;
         justify-content: center;
-        color: color(var(--ion-color-white)) !important;
-        font-size: 1.3rem;
-        font-weight: 500;
+        color: var(--ion-color-dark) !important;
+        font-size: 0.7rem;
+        font-weight: 600;
       }
       .weeks {
-        background: color(var(--ion-color-white)) !important;
+        background: var(--ion-color-white) !important;
         ion-col {
           text-align: center;
-          font-size: 1.37rem;
+          font-size: 0.7rem;
           display: flex;
           flex-direction: column;
           align-items: center;
-          color: color(var(--ion-color-dark)) !important;
+          color: var(--ion-color-dark) !important;
           .number {
             display: flex;
             height: 25px;
@@ -77,16 +76,16 @@ page-calendar {
           }
           .today {
             border-radius: 100%;
-            color: color(var(--ion-color-white))!important;
-            border: 1px solid color(var(--ion-color-primary))!important;
-            background: color(var(--ion-color-primary))!important;
+            color: var(--ion-color-white) !important;
+            border: 1px solid var(--ion-color-primary) !important;
+            background: var(--ion-color-primary) !important;
           }
           .different-month {
             color: lighten(#9E9EA2, 20%);
           }
           .selected {
             border-radius: 100%;
-            border: 1px solid color(var(--ion-color-stable));
+            border: 1px solid var(--ion-color-stable);
           }
           .events {
             display: flex;
@@ -95,7 +94,7 @@ page-calendar {
               display: flex;
               height: 4px;
               width: 4px;
-              color: color(var(--ion-color-light));
+              color: var(--ion-color-light);
               background: darken(#9E9EA2, 60%);
               border-radius: 100%;
               margin: 3px 1px 0;
@@ -109,10 +108,10 @@ page-calendar {
       flex-direction: column;
       flex: 1;
       .header {
-        background: color(var(--ion-color-light));
-        color: color(var(--ion-color-stable));
+        background: var(--ion-color-light);
+        color: var(--ion-color-stable);
         padding: 10px;
-        font-size: 1.7rem;
+        font-size: 1rem;
         .pull-right {
           float: right;
         }

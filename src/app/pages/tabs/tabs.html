@@ -1,32 +1,37 @@
 <ion-tabs>
-  <ion-tab-bar slot="bottom">
-  
+   <ion-tab-bar slot="bottom">
+
       <ion-tab-button tab="task">
-         <ion-icon name="ios-notifications"></ion-icon>
+         <!-- <ion-icon name="ios-notifications"></ion-icon> -->
+         <span class="icon-bell"></span>
          <ion-label>ToDO</ion-label>
       </ion-tab-button>
 
       <ion-tab-button tab="notes">
-          <ion-icon name="ios-create"></ion-icon>
-          <ion-label>Notes</ion-label>
-       </ion-tab-button>
+         <!-- <ion-icon name="ios-create"></ion-icon> -->
+         <span class="icon-note"></span>
+         <ion-label>Notes</ion-label>
+      </ion-tab-button>
 
-       <ion-tab-button tab="dashboard">
-          <ion-icon name="ios-stats"></ion-icon>
-          <ion-label>Dashboard</ion-label>
-        </ion-tab-button>
+      <ion-tab-button tab="dashboard">
+         <ion-icon  name="ios-stats"></ion-icon>
+         <!-- <span class="icon-bar-chart"></span> -->
+      </ion-tab-button>
 
-       <ion-tab-button tab="calendar">
-          <ion-icon name="ios-calendar"></ion-icon>
-          <ion-label>Calendar</ion-label>
-       </ion-tab-button>
 
-       <ion-tab-button tab="profile">
-          <ion-icon name="ios-person"></ion-icon>
-          <ion-label>Me</ion-label>
-       </ion-tab-button>
+      <ion-tab-button tab="calendar">
+         <!-- <ion-icon name="ios-calendar"></ion-icon> -->
+         <span class="icon-calendar"></span>
+         <ion-label>Calendar</ion-label>
+      </ion-tab-button>
 
-  </ion-tab-bar>
+      <ion-tab-button tab="profile">
+         <!-- <ion-icon name="ios-person"></ion-icon> -->
+         <span class="icon-user"></span>
+         <ion-label>Me</ion-label>
+      </ion-tab-button>
+
+   </ion-tab-bar>
 </ion-tabs>
 
 <!--<ion-tabs selectedIndex="2">
