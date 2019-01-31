@@ -17,17 +17,21 @@
           <ion-item>
             <ion-input type="password" placeholder="Password Confirm"  [(ngModel)]="user.forgotPassword"></ion-input>
           </ion-item>
-          <button ion-button color="secondary-alt" (click)="signup()" block> Sign Up</button>
+          <ion-button ion-button color="primary" size="default" (click)="signup()" expand="block"> Sign Up</ion-button>
         </ion-list>
         <p>or with</p>
         <ion-row>
             <ion-col>
-              <button small ion-button outline color="facebook" (click)="login()" block>facebook</button></ion-col>
+              <ion-button size="small" ion-button fill="outline" expand="full" class="fb" (click)="login()" block>facebook</ion-button></ion-col>
             <ion-col>
-              <button small ion-button outline color="google" (click)="login()" block>google</button>
+              <ion-button size="small" ion-button fill="outline" expand="full" class="google" (click)="login()" block>google</ion-button>
             </ion-col>
           </ion-row>
-        <p>already have an account? <a (click)="login()"> Sign In</a></p>
+          <ion-row>
+            <ion-col>
+              <p>already have an account? <a (click)="login()"> Sign In</a></p>
+            </ion-col>
+          </ion-row>
       </div>
     </div>
   </ion-content>

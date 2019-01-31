@@ -48,11 +48,11 @@ export class AddNoteComponent {
   }
 
   addListItem() {
-    this.note.list.push({text: '', checked: false});
+    //this.note.list.push({text: '', checked: false});
   }
 
   removeListItem(index) {
-    this.note.list.splice(index, 1);
+    //this.note.list.splice(index, 1);
   }
 
   getSummary(note){
@@ -60,12 +60,12 @@ export class AddNoteComponent {
   }
 
   save(){
-    if(this.note.id){
-      const index = this.dataService.notes.findIndex(event=> event.id ===this.note.id)
-      this.dataService.notes.splice(index, 1, this.note);
-    }else{
-      this.dataService.notes.push(this.note);
-    }
+    // if(this.note.id){
+    //   const index = this.dataService.notes.findIndex(event=> event.id ===this.note.id)
+    //   this.dataService.notes.splice(index, 1, this.note);
+    // }else{
+    //   this.dataService.notes.push(this.note);
+    // }
 
     // this.navCtrl.pop(); needs to change to ionic 4 version
   }
