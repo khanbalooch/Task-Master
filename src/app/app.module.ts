@@ -18,7 +18,7 @@ import { NotesPageModule } from './pages/notes/notes.module';
 import { CalendarPageModule } from './pages/calendar/calendar.module';
 import { ProfilePageModule } from './pages/profile/profile.module';
 import { SettingPageModule } from './pages/setting/setting.module';
-import { ComponentsModule } from './components/components.module';
+import { ComponentsModule, ColorsComponent } from './components/components.module';
 import { DataService, DataPlaceholderService } from './shared/services';
 import { Keyboard } from '@ionic-native/keyboard/ngx';
 import { TabsPageModule } from './pages/tabs/tabs.module';

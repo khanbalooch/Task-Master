@@ -1,5 +1,5 @@
 import { NgModule } from '@angular/core';
-import { ComponentsModule } from '../../components/components.module';
+import { ComponentsModule, ColorsComponent } from '../../components/components.module';
 import { MomentModule } from 'ngx-moment';
 import { NotesPage } from './notes';
 import { PipeModule } from '../../shared/pipes/pipe.module';
@@ -37,7 +37,9 @@ const routes: Routes = [
     DirectiveModule
   ],
   entryComponents: [
-    AddNoteComponent
+    AddNoteComponent,
+    ColorsComponent
+
   ]
 })
 export class NotesPageModule {}

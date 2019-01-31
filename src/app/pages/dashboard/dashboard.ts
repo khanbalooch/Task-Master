@@ -111,8 +111,7 @@ export class DashboardPage implements OnInit {
   }
 
   openSetting() {
-    this.router.navigateByUrl('SettingPage');
-    // this.navCtrl.push(SettingPage);
+    this.router.navigateByUrl('/setting');
   }
 
 }

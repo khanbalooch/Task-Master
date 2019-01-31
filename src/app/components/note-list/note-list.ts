@@ -13,12 +13,12 @@ export class NoteListComponent {
 
   constructor() {}
 
-  open(note){
+  open(note) {
     this.openNote.emit(note);
   }
 
-  getSummary(note){
-    return ((note.list.filter(list=> list.checked).length)/note.list.length) * 100;
+  getSummary(note) {
+    return ((note.list.filter(list => list.checked).length)/note.list.length) * 100;
   }
 
 }

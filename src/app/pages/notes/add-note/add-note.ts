@@ -3,7 +3,7 @@ import { PopoverController } from '@ionic/angular';
 import { DataPlaceholderService } from '../../../shared/services';
 import { Note } from '../../../shared/model';
 import { ColorsComponent } from '../../../components/components.module';
-import { Router } from '@angular/router';
+import { Router, ActivatedRoute } from '@angular/router';
 
 @Component({
   selector: 'add-note',
@@ -12,14 +12,28 @@ import { Router } from '@angular/router';
 })
 export class AddNoteComponent {
 
-  note: any;
+  note = {
+    id: '',
+    title: '',
+    type: '',
+    note: '',
+    color: '',
+    created: ''
+
+  };
 
   constructor(
-    public router: Router,
+    public router: ActivatedRoute,
     public popCtrl: PopoverController,
     public dataService: DataPlaceholderService) {
-    // todo
-    // this.note = navParams.data;
+
+      this.note.id = this.router.snapshot.paramMap.get('id');
+      this.note.title = this.router.snapshot.paramMap.get('title');
+      this.note.type = this.router.snapshot.paramMap.get('type');
+      this.note.note = this.router.snapshot.paramMap.get('note');
+      this.note.color = this.router.snapshot.paramMap.get('color');
+      this.note.created = this.router.snapshot.paramMap.get('created');
+
   }
 
   async openColor() {
@@ -27,7 +41,7 @@ export class AddNoteComponent {
       component: 'colors',
       event: event
     });
-    this.note.color =  await colorModal.present();
+    // this.note.color =  await colorModal.present();
     /*colorModal.onDidDismiss((data) => {
       if (data) { this.note.color = data }
     });*/

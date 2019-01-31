@@ -3,7 +3,7 @@ export class Note {
   type: string;
   title: string;
   note?: string;
-  list?: {text:string, checked:boolean}[];
+  list?: {text: string, checked: boolean}[];
   color: string;
   created?: Date | string;
 }

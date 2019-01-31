@@ -12,6 +12,6 @@
   </div>
   <div class="bottom">
     <div class="summary" *ngIf="note.type === 'list'">{{getSummary(note) | number: '1.0-1'}}% Complete</div>
-    <div class="date">{{note.created | amTimeAgo}}</div>
+    <div class="date">{{note.created}}</div>
   </div>
 </div>

@@ -12,22 +12,49 @@ import { Router } from '@angular/router';
 })
 export class NotesPage implements OnInit {
 
-  notes: Note[] = [];
+  notes = [
+    {
+      id: 1,
+      title: 'Life Note',
+      type: 'note',
+      note: 'Appreciate Life’s Simple Pleasures',
+      color: 'Yellow',
+      created: 'Today'
+    },
+    {
+      id: 1,
+      title: 'Love Note',
+      type: 'note',
+      note: 'Foster and Nurture Relationships',
+      color: 'Red',
+      created: 'Today'
+    },
+    {
+      id: 1,
+      title: 'Adventure Note',
+      type: 'note',
+      note: 'Travel to Distant Places',
+      color: 'Pink',
+      created: 'Today'
+    }
+  ];
 
   constructor(
     public router: Router,
     public dataService: DataPlaceholderService ) { }
 
   ngOnInit() {
-    this.notes = this.dataService.notes;
+    // todo
+    // Get list of notes from rest api
   }
 
   ionViewDidEnter() {
-    this.notes = this.dataService.notes;
+    // todo
+    // update list of notes
   }
 
   openNote(note) {
-    this.router.navigateByUrl('addcomponent', note);
+    this.router.navigate(['/addnote', note]);
     // this.navCtrl.push(AddNoteComponent, note);
   }
 
@@ -39,13 +66,11 @@ export class NotesPage implements OnInit {
       list: []
     };
 
-    this.router.navigateByUrl('addnotecomponent');
-    // this.navCtrl.push(AddNoteComponent, note);
+    this.router.navigate(['/addnote', note]);
   }
 
-  openSetting(){
+  openSetting() {
     this.router.navigateByUrl('setting');
-    //this.navCtrl.push(SettingPage);
   }
 
 }
