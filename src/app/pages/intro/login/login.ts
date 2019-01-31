@@ -13,14 +13,12 @@ import { Router } from '@angular/router';
 })
 export class LoginComponent {
 
-  user: any;
+  user = {
+    email: '',
+    password: ''
+  };
 
-  constructor(
-    public router: Router,
-    private dataService: DataPlaceholderService
-  ) {
-    this.user = dataService.mi;
-   }
+  constructor(public router: Router) {}
 
   signup() {
     this.router.navigateByUrl('signup');

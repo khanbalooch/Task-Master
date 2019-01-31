@@ -1,14 +1,11 @@
 import { Component, OnInit, ViewChild } from '@angular/core';
 import { IonSlides } from '@ionic/angular';
-import { LoginComponent } from './login/login';
-import { SignupComponent } from './signup/signup';
-import { ForgotComponent } from './forgot/forgot';
 import { Router } from '@angular/router';
 
 @Component({
   selector: 'page-intro',
   templateUrl: 'intro.html',
-  styles: ['intro.scss']
+  styleUrls: ['./intro.scss']
 })
 export class IntroPage implements OnInit {
 
@@ -40,7 +37,7 @@ export class IntroPage implements OnInit {
         paragraph: 'Sed a turpis eu eros dignissim luctus. Aliquam pulvinar tortor nunc, ac tristique odio facilisis eget. Nullam vel sodales arcu. In facilisis a orci at fermentum.',
         image: './assets/icon/001-note.png'
       }
-    ]
+    ];
   }
 
   slideChanged() {
@@ -62,7 +59,7 @@ export class IntroPage implements OnInit {
 
 
   goToIntro() {
-    this.router.navigateByUrl('LoginComponent');
+    this.router.navigateByUrl('login');
     //this.navCtrl.push(LoginComponent);
   }
 

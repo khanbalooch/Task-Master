@@ -23,9 +23,9 @@
       position: relative;
       align-items: center;
       justify-content: center;
-      background: color($colors, light);
+      background: var (--ion-colors-light);
       img {
-        max-height: 50%;
+        max-height:200px;
         z-index: 0;
         max-width: unset !important;
         width: unset !important;
@@ -40,11 +40,11 @@
       background: white;
       h1 {
         font-size: 3rem;
-        color: color($colors, primary);
+        color: var (--ion-colors-primary);
       }
       p {
         font-size: 1.37rem;
-        color: color($colors, dark);
+        color: var (--ion-colors-dark);
         margin: 0;
       }
       .skip {
@@ -55,14 +55,14 @@
         justify-content: flex-end;
         align-items: flex-end;
         padding: 20px 0 0 20px;
-        color: color($colors, primary);
+        color: var (--ion-colors-primary);
       }
     }
     &>.bottom{
       display: flex;
       padding: 30px 20px;
       align-items: center;
-      color: color($colors, primary);
+      color: var (--ion-colors-primary);
       &>.left{
         display: flex;
         flex:1;
@@ -82,12 +82,12 @@
       width:16px;
       border-radius: 0;
       height:6px;
-      border: 1px solid color($colors, tertiary);
+      border: 1px solid var (--ion-colors-tertiary);
       // padding: 5px;
-      background: color($colors, white);
+      background: var (--ion-colors-white);
     }
     .swiper-pagination-bullet-active {
-      background: color($colors, tertiary);
+      background: var (--ion-colors-tertiary);
     }
   }
 }

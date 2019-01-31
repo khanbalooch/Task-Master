@@ -40,6 +40,7 @@ const routes: Routes = [
     CommonModule
   ],
   entryComponents: [
+    IntroPage,
     LoginComponent,
     SignupComponent,
     ForgotComponent,
