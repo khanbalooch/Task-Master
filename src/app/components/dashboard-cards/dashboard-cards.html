@@ -6,7 +6,7 @@
 </button> -->
 <ion-button class="item" color="{{card.color}}" *ngFor="let card of items" [style.color]="card.color" (click)="goToPage(card.component)">
   <!-- <simple-line-icon [name]="card.icon"></simple-line-icon> -->
-  <ion-list align-self-center>
+  <ion-list align-self-center mode="md">
     <ion-item color="{{card.color}}" lines="none">
       <span class="{{card.icon}}" center></span>
     </ion-item>

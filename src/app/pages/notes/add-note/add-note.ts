@@ -51,11 +51,11 @@ export class AddNoteComponent {
 
 
   addListItem() {
-    // this.note.list.push({text: '', checked: false});
+    //this.note.list.push({text: '', checked: false});
   }
 
   removeListItem(index) {
-    // this.note.list.splice(index, 1);
+    //this.note.list.splice(index, 1);
   }
 
   getSummary(note){
