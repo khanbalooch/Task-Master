@@ -9,9 +9,12 @@
       <div class="title">{{event.title}}</div>
       <div class="more">
         <div class="date">Starts at {{event.start | date: 'shortTime'}}</div>
-        <simple-line-icon name="pin" *ngIf="event.location"></simple-line-icon>
+        <!-- <simple-line-icon name="pin" *ngIf="event.location"></simple-line-icon>
         <simple-line-icon name="users" *ngIf="event.invites"></simple-line-icon>
-        <simple-line-icon name="note" *ngIf="event.notes"></simple-line-icon>
+        <simple-line-icon name="note" *ngIf="event.notes"></simple-line-icon> -->
+        <span class="icon-pin" *ngIf="event.location"></span>
+        <span class="icon-users" *ngIf="event.invites"></span>
+        <span class="icon-note" *ngIf="event.notes"></span>
       </div>
     </div>
     <div class="more">
@@ -29,9 +32,12 @@
         <div class="title">{{event.title}}</div>
         <div class="more">
           <div class="date">Starts at {{event.start | date: 'shortTime'}}</div>
-          <simple-line-icon name="pin" *ngIf="event.location"></simple-line-icon>
+          <!-- <simple-line-icon name="pin" *ngIf="event.location"></simple-line-icon>
           <simple-line-icon name="users" *ngIf="event.invites"></simple-line-icon>
-          <simple-line-icon name="note" *ngIf="event.notes"></simple-line-icon>
+          <simple-line-icon name="note" *ngIf="event.notes"></simple-line-icon> -->
+          <span class="icon-pin" *ngIf="event.location"></span>
+          <span class="icon-users" *ngIf="event.invites"></span>
+          <span class="icon-note" *ngIf="event.notes"></span>
         </div>
       </div>
       <div class="more">

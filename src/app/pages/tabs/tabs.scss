@@ -1,3 +1,25 @@
+ion-icon[name="ios-stats"] {
+  color: #fff;
+  background: #5B69C2;
+  border-radius: 50%;
+  padding: 8px;
+  font-size: 24px;
+  width: 24px;
+  height: 24px;
+
+}
+ion-tab-button[tab="dashboard"] {
+  --padding-bottom: 8px;
+}
+ion-tab-button span {
+  font-size: 22px;
+  line-height: 24px;
+}
+ion-tab-button ion-label {
+  font-size: 10px;
+  margin: 2px 0;
+}
+
 /*$colors: (
   primary:    #5B69C2,
   secondary:  #3F88C5,

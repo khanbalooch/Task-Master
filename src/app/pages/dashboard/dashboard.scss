@@ -1,20 +1,40 @@
 
-  $colors: (
-  primary:    #5B69C2,
-  secondary:  #3F88C5,
-  tertiary:   #FFBA08,
-  alternative: #2B8A91,
-  danger:     #D00000,
-  light:      #f4f4f4,
-  dark:       #222,
-  dark-alt: #3B4649,
-  stable: #9E9EA2,
-  white: #fff,
-  facebook:   #3b5998,
-  google:     #dd4b39,
-);
+//   $colors: (
+//   primary:    #5B69C2,
+//   secondary:  #3F88C5,
+//   tertiary:   #FFBA08,
+//   alternative: #2B8A91,
+//   danger:     #D00000,
+//   light:      #f4f4f4,
+//   dark:       #222,
+//   dark-alt: #3B4649,
+//   stable: #9E9EA2,
+//   white: #fff,
+//   facebook:   #3b5998,
+//   google:     #dd4b39,
+// );
 /*page-dashboard {*/  
   :host {
+    ion-buttons ion-button {
+      --color:  var(--ion-color-dark-alt);
+    }
+    ion-card.canv-container {
+      margin-left: 4px !important;
+      margin-right: 4px !important;
+    }
+   ion-card-header {
+     color: var(--ion-color-dark-alt);
+     font-weight: 600;
+   }
+    ion-card.canv-container ion-card-content {
+      padding: 4px;
+    }
+    ion-card-content {
+      --padding-start: 0;
+      --inner-padding-start: 0;
+      --padding-end: 0;
+      --inner-padding-end: 0;
+    }
   ion-card-header {
     text-align: center;
     padding-top: 8px;
@@ -31,20 +51,20 @@
       padding: 0 !important;
     }
     ion-col {
-      border-top: 1px solid color($colors, light);
-      padding: 10px 20px!important;
+      border-top: 1px solid var(--ion-color-light);
+      padding: 10px 10px!important;
       &:first-of-type {
-        border-right: 1px solid color($colors, light);
+        border-right: 1px solid var(--ion-color-light);
       }
       h4{
         font-size: 0.8rem;
         font-weight: 300;
-        color: color($colors, stable);
+        color: var(--ion-color-stable);
       }
       p{
         font-size: 2.1rem;
         font-weight: 300;
-        color: color($colors, dark-alt);
+        color: var(--ion-color-dark-alt);
       }
     }
   }

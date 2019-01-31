@@ -1,10 +1,13 @@
 <ion-header>
   <ion-toolbar color="primary">
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="dashboard"></ion-back-button>
+    </ion-buttons>
     <ion-title>Add {{note.type}}</ion-title>
-    <ion-buttons end>
-      <button ion-button large (click)="save()">
-            <ion-icon name="md-checkmark"></ion-icon>
-              </button>
+    <ion-buttons slot="end">
+      <ion-button ion-button large (click)="save()">
+        <ion-icon name="md-checkmark"></ion-icon>
+      </ion-button>
     </ion-buttons>
   </ion-toolbar>
 </ion-header>
@@ -17,10 +20,10 @@
       <textarea placeholder="Enter content here..." [(ngModel)]="note.note"></textarea>
     </div>
     <div class="content-list flex-item" *ngIf="note.type === 'list'">
-      <button ion-button full icon-right clear (click)="addListItem()">
+      <ion-button ion-button full icon-right clear (click)="addListItem()">
         Add Checklist
         <ion-icon name="add"></ion-icon>
-      </button>
+      </ion-button>
       <div class="checklist">
         <div class="scroll">
           <div class="list-item" *ngFor="let item of note.list; let i = index">
@@ -41,9 +44,10 @@
       </div>
     </div>
     <div class="color flex-item">
-      <button ion-item clear (click)="openColor()">
-      <ion-icon [style.color]="note.color" item-start name="color-palette"></ion-icon>
-       Select a Color </button>
+      <ion-button ion-item clear (click)="openColor()">
+        <ion-icon [style.color]="note.color" item-start name="color-palette"></ion-icon>
+        Select a Color
+      </ion-button>
     </div>
   </div>
 </ion-content>

@@ -41,26 +41,32 @@
 
 }
 
-$toolbar-ios-button-color: color(var(--ion-color-dark-alt));
-$toolbar-ios-text-color: color(var(--ion-color-dark-alt));
-$toolbar-ios-title-text-color: color(var(--ion-color-dark-alt));
+:host {
+$toolbar-ios-button-color: var(--ion-color-dark-alt);
+$toolbar-ios-text-color:var(--ion-color-dark-alt);
+$toolbar-ios-title-text-color: var(--ion-color-dark-alt);
 $toolbar-ios-title-font-weight: 400;
 $toolbar-ios-border-color: transparent;
-$toolbar-background: color(var(--ion-color-dark-white));
-$tabs-background: color(var(--ion-color-dark-white));
-$text-color:  color(var(--ion-color-dark-alt));
-$tabs-ios-tab-text-color: color(var(--ion-color-dark-alt));
-
+$toolbar-background: var(--ion-color-dark-white);
+$tabs-background: var(--ion-color-dark-white);
+$text-color: var(--ion-color-dark-alt);
+$tabs-ios-tab-text-color: var(--ion-color-dark-alt);
+* {
+  font-family: 'Roboto', sans-serif;
+}
+ion-toolbar ion-buttons ion-button {
+  --color:  var(--ion-color-dark-alt);
+}
 
 
 .toolbar {
-    box-shadow: 9px 19px 85px -9px color(var(--ion-color-dark-light));
+    box-shadow: 9px 19px 85px -9px var(--ion-color-dark-light);
     // border-bottom: 0.5px solid color($colors, light);
     .toolbar-background {
       // background: transparent;
     }
     button {
-      color: color(var(--ion-color-dark-alt));
+      color: var(--ion-color-dark-alt);
     }
     .toolbar-title {
       text-transform: capitalize;
@@ -81,6 +87,13 @@ $tabs-ios-tab-text-color: color(var(--ion-color-dark-alt));
     .toggle-inner {
       left: 2px;
       top: -8px;
-      border: 1px solid color(var(--ion-color-stable));
+      border: 1px solid var(--ion-color-stable);
     }
   }
+  .noto-sans {
+    font-family: 'Noto Sans', sans-serif;
+  }
+  .roboto {
+    font-family: 'Roboto', sans-serif;
+  }
+}

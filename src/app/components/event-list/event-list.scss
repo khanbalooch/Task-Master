@@ -28,15 +28,18 @@
 
 // }
 :host {
+  .more span {
+    margin: 0 4px;
+  }
   $checkbox-ios-icon-size: 30px;
   .no-events {
-    font-size: 1.6rem;
-    background: color(var(--ion-color-light));
+    font-size: 1rem;
+    background: var(--ion-color-light);
     padding: 20px;
     border-radius: 6px;
     h2 {
-      font-size: 2rem;
-      color: color(var(--ion-color-primary));
+      font-size: 1.4rem;
+      color: var(--ion-color-primary);
     }
   }
   .group {
@@ -46,9 +49,11 @@
     &>.title {
       display: flex;
       flex: 1;
-      color: color(var(--ion-color-stable));
-      background: color(var(--ion-color-stable));
+      color: var(--ion-color-stable);
+      background: var(--ion-color-stable);
       padding:10px;
+      font-size: 0.8rem;
+      font-weight: 600;
     }
   }
   .event-item {
@@ -58,7 +63,7 @@
     align-items: center;
     padding: 10px 10px 15px;
     // margin-bottom: 15px;
-    border-bottom: 1px solid color(var(--ion-color-light));
+    border-bottom: 1px solid var(--ion-color-light);
     &>.color {
       display: flex;
       flex-direction: column;
@@ -73,23 +78,23 @@
       padding: 0 20px;
       &>.title {
         margin-bottom: 5px;
-        font-weight: 500;
-        color: color(var(--ion-color-dark-alt));
+        font-weight: 600;
+        color: var(--ion-color-dark-alt);
       }
       &>.more {
         display: flex;
         flex: 1;
         &>.date {
           display: flex;
-          color: color(var(--ion-color-stable));
-          font-size: 1.3rem;
+          color: var(--ion-color-stable);
+          font-size: 0.7rem;
           margin-right: 20px;
         }
         &>.icon {
           display: flex;
           align-items: flex-end;
           padding: 0 3px;
-          color: color(var(--ion-color-stable));
+          color: var(--ion-color-stable);
         }
       }
     }
@@ -98,6 +103,7 @@
       width: 20%;
       justify-content: flex-end;
       align-items: flex-end;
+      
     }
   }
 }
