@@ -3,7 +3,7 @@ import { MomentModule } from 'ngx-moment';
 import { ComponentsModule } from '../../components/components.module';
 import { DirectiveModule } from '../../shared/directives/directive.module';
 
-import { CalendarPage, MonthPopover } from './calendar';
+import { CalendarPage } from './calendar';
 import { AddEvent } from './add-event/add-event';
 import { EventDetail, EventDetailPopover } from './detail/event-detail';
 import { IonicModule } from '@ionic/angular';
@@ -29,7 +29,6 @@ const routes: Routes = [
 @NgModule({
   declarations: [
     CalendarPage,
-    MonthPopover,
     AddEvent,
     EventDetail,
     EventDetailPopover
@@ -44,7 +43,6 @@ const routes: Routes = [
     MomentModule
   ],
   entryComponents: [
-    MonthPopover,
     AddEvent,
     EventDetail,
     EventDetailPopover

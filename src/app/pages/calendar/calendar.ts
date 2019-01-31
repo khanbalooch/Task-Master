@@ -8,6 +8,7 @@ import { EventDetail } from './detail/event-detail';
 import { Event } from '../../shared/model';
 import { SettingPage } from '../setting/setting';
 import { Router } from '@angular/router';
+import { MonthPopoverComponent } from 'src/app/components/month-popover/month-popover.component';
 
 
 @Component({
@@ -51,10 +52,13 @@ export class CalendarPage implements OnInit {
   select(day) {
     this.selected = day.date;
     this.dayEvents = day.events;
-  };
+  }
 
-  jumpToMonth(month) {
-    let next = month.clone();
+  jumpToMonth(data) {
+
+    let month = moment(data);
+    //let next = month.clone();
+    let next  = moment(data);
     next.date(1);
     this._removeTime(next.day(0));
     this.month = month.month(month.month());
@@ -67,14 +71,14 @@ export class CalendarPage implements OnInit {
     this._removeTime(next.month(next.month() + 1)).day(0);
     this.month = this.month.month(this.month.month() + 1);
     this._buildMonth(next, this.month, this.events);
-  };
+  }
 
   previous() {
     let previous = this.month.clone();
     this._removeTime(previous.month(previous.month() - 1).date(1));
     this.month.month(this.month.month() - 1);
     this._buildMonth(previous, this.month, this.events);
-  };
+  }
 
   _removeTime(date) {
     return date.day(0).hour(0).minute(0).second(0).millisecond(0);
@@ -129,25 +133,28 @@ export class CalendarPage implements OnInit {
   }
 
   async presentMonthModal() {
-    let monthModal: any = await this.popCtrl.create({
-      component: 'month-popover',
+    const monthModal: any = await this.popCtrl.create({
+      component: MonthPopoverComponent,
       event: event
     });
-    const data = await monthModal.present();
-    if (data) {
-      this.jumpToMonth(data);
-    }
 
-    /*monthModal.onDidDismiss((data) => { if (data) { this.jumpToMonth(data) } });*/
+    monthModal.onDidDismiss().then(month => {
+      if (month) {
+        //this.jumpToMonth(month.data);
+      }
+    });
+
+    return await monthModal.present();
+
   }
 
-  openSetting(){
+  openSetting() {
     this.router.navigateByUrl('SettingPage'); // this.navCtrl.push(SettingPage);
   }
 
 }
 
-@Component({
+/*@Component({
   selector: 'month-popover',
   template: `
     <ion-list>
@@ -169,4 +176,4 @@ export class MonthPopover {
   close(month) {
     this.modalController.dismiss(moment().month(month));
   }
-}
+}*/

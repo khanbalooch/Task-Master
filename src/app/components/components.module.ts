@@ -13,6 +13,7 @@ import { NoteListComponent } from './note-list/note-list';
 import { BrowserModule } from '@angular/platform-browser';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
+import { MonthPopoverComponent } from './month-popover/month-popover.component';
 
 
 @NgModule({
@@ -24,6 +25,7 @@ import { FormsModule } from '@angular/forms';
     ColorsComponent,
     ContactPopoverComponent,
     NoteListComponent,
+    MonthPopoverComponent,
 
   ],
 	imports: [
@@ -42,7 +44,8 @@ import { FormsModule } from '@angular/forms';
   ],
   entryComponents: [
     ColorsComponent,
-    ContactPopoverComponent
+    ContactPopoverComponent,
+    MonthPopoverComponent
   ]
 })
 export class ComponentsModule {}

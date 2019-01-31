@@ -13,15 +13,13 @@ export class ColorsComponent {
   selected_colors: any[] = [];
   rows: any[];
   constructor(
-    public modalController: ModalController,
-    private navParams: NavParams
-  ) {
+    public popOverController: PopoverController) {
     this.colors = colors;
     this.rows = Array.from(Array(Math.ceil(this.colors.length / 4)).keys());
   }
 
   close(color) {
-    this.modalController.dismiss(color);
+    return this.popOverController.dismiss(color);
   }
 }
 
