@@ -1,17 +1,3 @@
-$colors: (
-  primary:    #5B69C2,
-  secondary:  #3F88C5,
-  tertiary:   #FFBA08,
-  alternative: #2B8A91,
-  danger:     #D00000,
-  light:      #f4f4f4,
-  dark:       #222,
-  dark-alt: #3B4649,
-  stable: #9E9EA2,
-  white: #fff,
-  facebook:   #3b5998,
-  google:     #dd4b39,
-);
 :host {
   .scroll-content {
     overflow: hidden;
@@ -27,10 +13,10 @@ $colors: (
     flex-direction: column;
     padding: 20px;
     &:nth-of-type(odd) {
-      background: color($colors, light);
+      background: var(--ion-color-light);
     }
     &:nth-of-type(even) {
-      background: color($colors, white);
+      background: var(--ion-color-white);
     }
     input,
     textarea {
@@ -50,7 +36,7 @@ $colors: (
   .content-note,
   .content-list {
     flex: 1;
-    border-bottom: 1px solid color($colors, light);
+    border-bottom: 1px solid var(--ion-color-light);
     textarea {
       height: 100%;
     }
@@ -60,7 +46,7 @@ $colors: (
     &>.checklist {
       display: flex;
       flex-direction: column;
-      border-top: 1px solid color($colors, light);
+      border-top: 1px solid var(--ion-color-light);
       position: relative;
       height: 100%;
       overflow-y: auto;

@@ -2,13 +2,13 @@
   <ion-toolbar>
     <ion-buttons slot="start">
       <ion-button ion-button icon-only (click)="openSetting()">
-        <simple-line-icon name="settings"></simple-line-icon>
+        <span class="icon-settings"></span>
       </ion-button>
     </ion-buttons>
     <ion-title>profile</ion-title>
     <ion-buttons slot="end">
       <ion-button ion-button icon-only (click)="openIntro()">
-        <simple-line-icon name="logout"></simple-line-icon>
+        <span class="icon-logout" ></span>
       </ion-button>
     </ion-buttons>
   </ion-toolbar>
@@ -18,7 +18,9 @@
 <ion-content parallax-header>
   <div class="profile">
     <div class="header">
-      <div class="image" [style.background-image]="'url(' + user.picture + ')'"></div>
+      <div class="image" >
+        <img class="image" src='{{user.picture}}'  />
+      </div>
       <div class="desc">
         {{user.firstname + ' ' + user.lastname}}
       </div>

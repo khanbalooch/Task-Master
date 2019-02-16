@@ -6,15 +6,16 @@ import { AddEvent } from '../calendar/add-event/add-event';
 import { EventDetail } from '../calendar/detail/event-detail';
 import { AddNoteComponent } from '../notes/add-note/add-note';
 import { Router } from '@angular/router';
+import { useAnimation } from '@angular/animations';
 
 @Component({
   selector: 'page-profile',
   templateUrl: 'profile.html',
-  styleUrls: ['profile.scss']
+  styleUrls: ['./profile.scss']
 })
 export class ProfilePage implements OnInit {
 
-  user: any;
+  user = { firstname: 'John', lastname: 'Doe', picture: './assets/user.png' };
   events: any[];
   notes: any[];
   tabs: { text: string; active?: boolean }[];
@@ -24,9 +25,9 @@ export class ProfilePage implements OnInit {
     public router: Router,
     private dataService: DataPlaceholderService
   ) {
-    this.user = dataService.mi;
-    this.events = dataService.events.filter(event => new Date(event.start.toString()).getDate() === new Date().getDate());
-    this.notes = dataService.notes.filter(event => new Date(event.created.toString()).getDate() === new Date().getDate());
+    // this.user = dataService.mi;
+     this.events = dataService.events.filter(event => new Date(event.start.toString()).getDate() === new Date().getDate());
+     this.notes = dataService.notes.filter(event => new Date(event.created.toString()).getDate() === new Date().getDate());
   }
 
   ngOnInit() {
@@ -50,7 +51,7 @@ export class ProfilePage implements OnInit {
   setSelectedTab(tab) {
     this.tabs.map(tab => {
       tab.active = false;
-      return tab
+      return tab;
     });
     tab.active = true;
     this.tab = tab;
@@ -67,7 +68,7 @@ export class ProfilePage implements OnInit {
       title: '',
       type: 'note',
       list: []
-    }
+    };
     this.router.navigateByUrl('AddNoteCompoenet');
     // this.navCtrl.push(AddNoteComponent, note);
   }
@@ -83,8 +84,8 @@ export class ProfilePage implements OnInit {
     // this.navCtrl.push(AddNoteComponent, note);
   }
 
-  getSummary(note){
-    return ((note.list.filter(list=> list.checked).length)/note.list.length) * 100;
+  getSummary(note) {
+    return ((note.list.filter(list => list.checked).length) / note.list.length) * 100;
   }
 
   openSetting() {

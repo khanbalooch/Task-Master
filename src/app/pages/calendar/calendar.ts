@@ -14,7 +14,7 @@ import { MonthPopoverComponent } from 'src/app/components/month-popover/month-po
 @Component({
   selector: 'page-calendar',
   templateUrl: 'calendar.html',
-  styleUrls: ['calendar.scss'],
+  styleUrls: ['./calendar.scss'],
   animations: [slideDownAnimation]
 })
 export class CalendarPage implements OnInit {
@@ -124,7 +124,7 @@ export class CalendarPage implements OnInit {
     return days;
   }
 
-  add(){
+  add() {
     this.router.navigateByUrl('AddEvent'); // navCtrl.push(AddEvent);
   }
 
@@ -132,7 +132,7 @@ export class CalendarPage implements OnInit {
     this.router.navigateByUrl('EventDetail', event); // this.navCtrl.push(EventDetail, event);
   }
 
-  async presentMonthModal() {
+  async presentMonthModal(event) {
     const monthModal: any = await this.popCtrl.create({
       component: MonthPopoverComponent,
       event: event
@@ -153,27 +153,3 @@ export class CalendarPage implements OnInit {
   }
 
 }
-
-/*@Component({
-  selector: 'month-popover',
-  template: `
-    <ion-list>
-      <ion-list-header>Select a month</ion-list-header>
-      <button ion-item (click)="close(month)" *ngFor="let month of months">{{month}}</button>
-
-    </ion-list>
-  `,
-  styles: ['ion-list { max-height: 230px; overflow-y: auto; }']
-})
-export class MonthPopover {
-
-  months: any[];
-
-  constructor(public modalController: ModalController) {
-    this.months = moment.months();
-  }
-
-  close(month) {
-    this.modalController.dismiss(moment().month(month));
-  }
-}*/
