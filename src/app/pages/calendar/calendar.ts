@@ -125,7 +125,7 @@ export class CalendarPage implements OnInit {
   }
 
   add() {
-    this.router.navigateByUrl('AddEvent'); // navCtrl.push(AddEvent);
+    this.router.navigateByUrl('addevent'); // navCtrl.push(AddEvent);
   }
 
   open(event) {

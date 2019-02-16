@@ -69,8 +69,7 @@ export class ProfilePage implements OnInit {
       type: 'note',
       list: []
     };
-    this.router.navigateByUrl('AddNoteCompoenet');
-    // this.navCtrl.push(AddNoteComponent, note);
+    this.router.navigate(['/addnote', note]);
   }
 
   openEvent(event) {
